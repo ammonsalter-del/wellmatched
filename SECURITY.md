@@ -8,7 +8,7 @@
 
 ## How Well Matched handles your information
 
-Well Matched is a single web page with no server, no database and no account. It runs in your own browser. It comes in three versions (see The Well Matched family in the development manual); this file covers all three.
+Well Matched is a single web page with no server, no database and no account. It runs in your own browser. It comes in three versions (see The Well Matched family on the tool page); this file covers all three.
 
 ### Use an API (the website)
 
@@ -23,7 +23,7 @@ Well Matched is a single web page with no server, no database and no account. It
 
 ### Analytics
 
-We use Google Analytics purely to track use by country and time. No other information is collected. Counting use helps us show that this free educational tool is being used, and so gain credit for the work that goes into it.
+Well Matched uses Google Analytics purely to track use by country and time. No other information is collected. Counting use shows that this free educational tool is being used, and earns credit for the work that goes into it.
 
 - It runs on the website only, and only after you press Allow on the notice at the foot of the page. If you press No thanks, nothing is loaded from Google Analytics. You can change your choice at any time from the link under Your data at the foot of the page.
 - Nothing you type or upload is sent to Google. Google signals and advertising features are switched off.
@@ -60,7 +60,7 @@ When the tool reads departments' web pages, it treats what it finds as informati
 
 ## Reporting a problem
 
-If you find a security or privacy problem, please email [ammon.salter@wbs.ac.uk](mailto:ammon.salter@wbs.ac.uk) rather than opening a public issue. Say what you found, how to repeat it and what harm it could do. We will acknowledge it within 7 days and aim to fix confirmed problems promptly.
+If you find a security or privacy problem, please email [ammon.salter@wbs.ac.uk](mailto:ammon.salter@wbs.ac.uk) rather than opening a public issue. Say what you found, how to repeat it and what harm it could do. You will get an acknowledgement within 7 days, and confirmed problems will be fixed promptly.
 
 ## What this file does not cover
 

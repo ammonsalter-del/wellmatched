@@ -6,7 +6,7 @@
 
 **Free, open source and private.** The developer sees nothing you enter, and nothing it tells you. There is no server and nothing is kept: the page runs in your own browser, and your materials go only to Anthropic, using your own API key, to be read.
 
-[Open Well Matched](https://[GITHUB PAGES ADDRESS TO BE ADDED]/) · [Development manual](manual.html)
+[Open Well Matched](https://[GITHUB PAGES ADDRESS TO BE ADDED]/)
 
 ## What you get
 
@@ -38,14 +38,14 @@ then open `http://localhost:8000/` in your browser. (Opening `index.html` straig
 - `index.html`: the tool, a single page.
 - `lib/`: the PDF and Word readers it uses (pdf.js and mammoth.js), kept here so nothing is loaded from elsewhere.
 - `images/`: the logo, the picture of how it works, and the detailed map.
-- `manual.html` and `manual.md`: the development manual, which explains how the tool works, how it scores and the rules it follows.
+- `manual.md`: the development manual, which explains how the tool works, how it scores and the rules it follows.
 - `in-your-claude/`: Well Matched in your Claude, the version for your own Claude chat, with its instructions.
 - `SECURITY.md`: how your key and materials are handled, and how to report a problem.
 - `CONTRIBUTING.md` and `CHANGELOG.md`: how to send suggestions or changes, and what has changed.
 
 ## How it was built and checked
 
-Well Matched began in October 2026 as a Claude artifact, drawing on experience of hiring committees, and was revised many times. All materials created with Claude Opus 5.5, with review by Ammon Salter.
+Well Matched began in October 2026 as a Claude artifact, drawing on experience of hiring committees, and was revised many times. Designed, developed and reviewed by Ammon Salter, Warwick Business School, using Claude Opus 5.5.
 
 Beta-testers, named under Credits, used it and commented. Their comments shaped the questions it asks and led to the agents that find each department's information. It was then rebuilt as a website that runs on the candidate's own key. The scores come from fixed rules in the page, and Claude does the reading.
 
@@ -53,10 +53,10 @@ It was checked in four ways:
 
 - **Invented candidates.** More than twenty, from schools of different standing and countries, with different records and ambitions, were run against invented departments: about 30 cases in all. The Do it yourself version was also run on an invented candidate in a Claude account.
 - **Stand-in tests.** A browser loads the page and answers in place of Anthropic and OpenAlex with fixed replies, so the scoring, wording, safeguards, layout and report can be checked at no cost. Some tests feed in faults on purpose, such as hype or an invented professor, to check that the page removes them.
-- **Critical reviews.** Three reviewers, played by Claude, read the page and the manual from different points of view: someone from a lower-ranked school, a senior professor and an information systems scholar. The manual lists what changed as a result.
+- **Critical reviews.** Three reviewers, played by Claude, read the page and the manual from different points of view: someone from a lower-ranked school, a senior professor and an information systems scholar.
 - **Sources.** The references were checked against Crossref, and the links to the lists and rankings against their own pages.
 
-It has not yet been tested against real hiring outcomes. Full details are in the [development manual](manual.html), under How it was developed, Testing and What the reviewers said.
+It has not yet been tested against real hiring outcomes.
 
 ## Your data
 
@@ -72,18 +72,14 @@ Well Matched is shared under the [Creative Commons Attribution-NonCommercial 4.0
 
 ## Sources
 
-The journal buckets (World leading, Leading, Excellent, Strong) and the school scores are Well Matched's own. They combine these published lists and rankings, and no grade or rank from any of them is shown or kept.
+The journal buckets (World leading, Leading, Excellent, Strong) and the school scores are Well Matched's own. They combine these published lists and rankings, and no grade or rank from any of them is shown or kept. Using them implies no endorsement either way: their makers have not endorsed Well Matched, and Well Matched does not endorse them.
 
-- **Journals:** Anne-Wil Harzing's Journal Quality List and the lists it compiles that we use (the Chartered ABS Academic Journal Guide, VHB, FNEGE, CNRS, Hcéres and the Danish BFI list), with the UT Dallas and FT50 journal lists.
+- **Journals:** Anne-Wil Harzing's Journal Quality List and the lists it compiles that Well Matched uses (the Chartered ABS Academic Journal Guide, VHB, FNEGE, CNRS, Hcéres and the Danish BFI list), with the UT Dallas and FT50 journal lists.
 - **Schools:** the UT Dallas research rankings, the QS subject ranking for business and management, the QS World University Rankings, the FT Research Insights ranking and REF 2021.
 
-If you think a journal or school is placed wrongly, please take it up with the list or ranking makers. Full citations, with links, are in the [development manual](manual.html), under Sources and credits.
+If you think a journal or school is placed wrongly, please take it up with the list or ranking makers. Full citations, with links, are on the tool page, under Sources.
 
-**A note on status hierarchies.** Journal lists and school ranking tables are status hierarchies built on reputation: what people in the field believe, not what is true. We do not endorse them, and they are unreliable for judging individual people, departments or even universities. Committees are made up of people, just like you. Hiring early-career academics is hard, and in the face of uncertainty committees often fall back on weak signals of status. They may not consult the lists or ranking tables directly, but they are highly likely to be aware of them. Well Matched draws on these hierarchies to show how a committee is likely to read a record, not how it should be read. It looks only at shortlisting, the first stage; later stages bring in other factors, such as the presentation, interviews and local preferences. See the development manual, under The limits of the tool and Related research, for further details.
-
-## Related research
-
-There is a broad literature on decision making in panels and committees, on journal lists and on status. A short review, with references, is in the [development manual](manual.html), under Related research.
+**A note on status hierarchies.** Journal lists and school ranking tables are status hierarchies built on reputation: what people in the field believe, not what is true. Well Matched does not endorse them, and they are unreliable for judging individual people, departments or even universities. Committees are made up of people, just like you. Hiring early-career academics is hard, and in the face of uncertainty committees often fall back on weak signals of status. They may not consult the lists or ranking tables directly, but they are highly likely to be aware of them. Well Matched draws on these hierarchies to show how a committee is likely to read a record, not how it should be read. It looks only at shortlisting, the first stage; later stages bring in other factors, such as the presentation, interviews and local preferences.
 
 ## How to cite
 
@@ -91,7 +87,9 @@ Salter, A. (2026). *Well Matched: matching first-post candidates with European b
 
 ## Credits
 
-Developed by Ammon Salter, Warwick Business School. All materials created with Claude Opus 5.5, with review by Ammon Salter.
+Designed, developed and reviewed by Ammon Salter, Warwick Business School, using Claude Opus 5.5. Website: [ammonsalter.org](https://ammonsalter.org).
+
+If you teach entrepreneurship or innovation, you might like to use the games from [The I&E Playbook](https://ieplaybook.substack.com).
 
 Contributors and beta-testers: Federico Bignone (Warwick Business School), Christos Kolympiris (Warwick Business School), Rossella Salandra (University of Bath), Philipp Wähler (CUNEF) and Zou Na (University of Bath). They tried the tool and gave feedback. Any errors are the developer's own.
 
