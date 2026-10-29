@@ -1,0 +1,102 @@
+HOW TO RUN WELL MATCHED IN YOUR OWN CLAUDE CHAT
+
+Well Matched, developed by Ammon Salter, Warwick Business School.
+Free and open source under the Creative Commons Attribution-NonCommercial 4.0 licence (CC BY-NC 4.0).
+
+This version needs no API key. It runs in your own Claude chat, on your own Claude account, and uses your plan's allowance. Nothing goes to the developer.
+
+If you have an Anthropic API key, use the website version instead. It finds each department's staff for you, which this version cannot.
+
+
+BEFORE YOU START
+
+Have these ready, as PDF or Word files or as text:
+  - your CV
+  - your cover letter
+  - your job market paper
+  - for each department: the job advert, if there is one
+
+You need a Claude account on claude.ai, in a web browser or the Claude app.
+
+
+1. OPEN THE TOOL
+
+  a. Start a new chat in Claude.
+  b. Attach the file well-matched-chat.html.
+  c. Copy this message and send it:
+
+     Please publish the attached file exactly as it is, as an HTML artifact, so I can use it here. Do not change, shorten or rewrite any of it.
+
+  d. The tool opens beside the chat. You will see the Well Matched logo and the heading "Running in your own Claude chat".
+
+Keep this chat open until you have finished. If you close it, what you typed is lost.
+
+
+2. FILL IN "YOUR MATERIALS AND PREFERENCES"
+
+  a. Upload or paste your CV, your cover letter and your job market paper.
+  b. Answer the questions below them: when you started and will finish your PhD, your supervisors, the countries you would move to, and the rest.
+  c. For your supervisors, give each one's name, position and where they publish, or paste their profile pages.
+
+
+3. FIND EACH DEPARTMENT'S STAFF, IN THE CHAT
+
+The tool cannot search the web, so you do this part in the chat, once for each department.
+
+  a. In the tool, under "The departments you are considering", press "Copy the message".
+  b. Click in the chat box (outside the tool) and paste the message.
+  c. At the end of the message, replace the two parts in square brackets:
+       [your topics]                 with your research topics, in a few words
+       [school and department]       with the school and department, for example
+                                     "Copenhagen Business School, Department of Strategy and Innovation"
+  d. Send it. Claude searches the school's website and replies with a list of staff.
+  e. Read the list. Delete anyone or anything that looks wrong.
+  f. Copy the list.
+
+Repeat a to f for each department. You can send the message again with a different department each time.
+
+
+4. FILL IN "THE DEPARTMENTS YOU ARE CONSIDERING"
+
+For each department:
+  a. In "School, department and country", type its name.
+  b. In "The job advert", paste the advert if there is one.
+  c. In "The department's people", paste the staff list you copied in Step 3.
+  d. Fill in the other boxes if you can: the start date, and anyone there who knows you.
+  e. Press "Add another department" for the next one.
+
+A department with nothing pasted in "The department's people" gets only a thin reading.
+
+
+5. READ YOUR MATCH
+
+  a. Under "Read it as a committee would", press "Read my match".
+  b. Wait. It takes a few minutes, longer with more departments. Keep the chat open.
+  c. Your results appear under "Your matches". Select any square for the reasons behind it.
+
+
+6. KEEP A COPY
+
+  a. Press "Save a report (PDF)".
+  b. In the window that opens, press "Print or save as PDF", then choose "Save as PDF".
+  The report has your results and all the material used.
+
+
+IF SOMETHING GOES WRONG
+
+  - Claude rewrites or shortens the file, or says it is too long:
+    start a new chat and try Step 1 again. If it still fails, ask the person who gave you the tool for the smaller copy.
+  - The tool says Claude is not available here:
+    your chat cannot run tools like this one. Use the website version with an API key.
+  - A message says your plan is at its usage limit:
+    wait, and press "Read my match" again later.
+  - A department "could not be read this time":
+    press "Read my match" again.
+  - The staff list from Step 3 looks wrong or empty:
+    find the department's staff page on the school's website yourself and paste it into "The department's people".
+
+
+HOW TO CITE
+Salter, A. (2026). Well Matched: matching first-post candidates with European business school departments [Software]. Zenodo. https://doi.org/[DOI to be added]
+
+AI based and imperfect; each hiring round and each candidate is different. It gives an indication, not advice.
