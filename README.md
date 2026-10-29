@@ -43,6 +43,21 @@ then open `http://localhost:8000/` in your browser. (Opening `index.html` straig
 - `SECURITY.md`: how your key and materials are handled, and how to report a problem.
 - `CONTRIBUTING.md` and `CHANGELOG.md`: how to send suggestions or changes, and what has changed.
 
+## How it was built and checked
+
+Well Matched began in October 2026 as a Claude artifact, drawing on experience of hiring committees, and was revised many times. All materials created with Claude Opus 5.5, with review by Ammon Salter.
+
+Beta-testers, named under Credits, used it and commented. Their comments shaped the questions it asks and led to the agents that find each department's information. It was then rebuilt as a website that runs on the candidate's own key. The scores come from fixed rules in the page, and Claude does the reading.
+
+It was checked in four ways:
+
+- **Invented candidates.** More than twenty, from schools of different standing and countries, with different records and ambitions, were run against invented departments: about 30 cases in all. The Do it yourself version was also run on an invented candidate in a Claude account.
+- **Stand-in tests.** A browser loads the page and answers in place of Anthropic and OpenAlex with fixed replies, so the scoring, wording, safeguards, layout and report can be checked at no cost. Some tests feed in faults on purpose, such as hype or an invented professor, to check that the page removes them.
+- **Critical reviews.** Three reviewers, played by Claude, read the page and the manual from different points of view: someone from a lower-ranked school, a senior professor and an information systems scholar. The manual lists what changed as a result.
+- **Sources.** The references were checked against Crossref, and the links to the lists and rankings against their own pages.
+
+It has not yet been tested against real hiring outcomes. Full details are in the [development manual](manual.html), under How it was developed, Testing and What the reviewers said.
+
 ## Your data
 
 Nothing you enter is captured or recorded, and there is no database behind the tool. There is no advertising, no fee and no paid version. What you put in goes only to Anthropic, with your own key, to be read, and what happens to it there is between you and the settings you choose in your Anthropic account. The names of departments' staff are sent to OpenAlex to count their publications.
@@ -88,30 +103,7 @@ Schools. Each school's score is Well Matched's own, a composite of these sources
 
 ## Related research
 
-Selection under uncertainty has been a long-running theme in our own work. Studying the panels of a large professional services firm, we found that evaluators favour projects of intermediate novelty, and that their appetite for novelty falls when they are busy and rises when the panel holds more varied expertise or sits close to the applicant (Criscuolo et al., 2017). Using the random order in which those projects were reviewed, we showed that a proposal heard straight after a funded one is less likely to be funded itself, as evaluators' mental and emotional resources run down over a meeting (Criscuolo et al., 2021). At the UK's largest research council, panels are less likely to fund a marginal application when another from the same institution has already been funded in that round, which suggests a preference for spreading awards across institutions (Lawson & Salter, 2023). Journal lists carry a status of their own. UK business and management academics would give up citations to publish in a 4* rather than a 4-rated journal, and those who already hold such papers, or who work at higher-ranked institutions, would give up the most (Salandra et al., 2022). Reliance on the ABS list is heaviest among academics with less influence in their field and among those at middle- and lower-status universities (Walker, Fenton, et al., 2019), and attitudes towards the list soften among those whose journals are upgraded (Walker, Salter, et al., 2019). A higher grade also brings more citations: when a journal moved up the ABS list, citations to its papers rose, largely because authors cite highly ranked journals to signal the standing of their own work (Drivas & Kremmydas, 2020). Critics argue that such lists narrow what the field studies (Mingers & Willmott, 2013; Tourish & Willmott, 2015) and that counts of 4-rated papers have come to dominate how deans and research managers judge staff and job applicants (Hussain, 2015). Others defend the lists. Foss and Mol (2026) argue that they are less imperfect than the alternatives, offering a scalable and at least partly meritocratic way to move beyond networks, prestige and patronage, while warning against using them as the only measure of quality.
-
-Beyond our own work, Lamont (2009) shows how academic panels define and recognise quality in their deliberations. Status brings rewards of its own (Merton, 1968; Podolny, 1993), although separating the effect of status from that of quality is difficult (Azoulay et al., 2014). Prato et al. (2024) review a decade of research on status and distinguish three types: prestige status, based on merit; iconic status, based on symbols; and dominant status, based on power. All three may be present in academic rankings and status hierarchies.
-
-We use this material to try to uncover how committees think, not how they should. Well Matched looks only at shortlisting. Later in the hiring process other factors come into play, such as the quality of the presentation, personal meetings, answers at interview, local preferences and past hiring rounds. It is a complex cocktail of factors at each stage. We focus on the first stage here.
-
-References
-
-- Azoulay, P., Stuart, T., & Wang, Y. (2014). Matthew: Effect or fable? *Management Science, 60*(1), 92–109. [https://doi.org/10.1287/mnsc.2013.1755](https://doi.org/10.1287/mnsc.2013.1755)
-- Criscuolo, P., Dahlander, L., Grohsjean, T., & Salter, A. (2017). Evaluating novelty: The role of panels in the selection of R&D projects. *Academy of Management Journal, 60*(2), 433–460. [https://doi.org/10.5465/amj.2014.0861](https://doi.org/10.5465/amj.2014.0861)
-- Criscuolo, P., Dahlander, L., Grohsjean, T., & Salter, A. (2021). The sequence effect in panel decisions: Evidence from the evaluation of research and development projects. *Organization Science, 32*(4), 987–1008. [https://doi.org/10.1287/orsc.2020.1413](https://doi.org/10.1287/orsc.2020.1413)
-- Drivas, K., & Kremmydas, D. (2020). The Matthew effect of a journal's ranking. *Research Policy, 49*(4), Article 103951. [https://doi.org/10.1016/j.respol.2020.103951](https://doi.org/10.1016/j.respol.2020.103951)
-- Foss, N. J., & Mol, M. (2026, May 13). Journal lists advance both rigour and relevance. *Times Higher Education*. [https://www.timeshighereducation.com/opinion/journal-lists-advance-both-rigour-and-relevance](https://www.timeshighereducation.com/opinion/journal-lists-advance-both-rigour-and-relevance)
-- Hussain, S. (2015). Journal list fetishism and the "sign of 4" in the ABS guide: A question of trust? *Organization, 22*(1), 119–138. [https://doi.org/10.1177/1350508413506763](https://doi.org/10.1177/1350508413506763)
-- Lamont, M. (2009). *How professors think: Inside the curious world of academic judgment*. Harvard University Press. [https://doi.org/10.4159/9780674054158](https://doi.org/10.4159/9780674054158)
-- Lawson, C., & Salter, A. (2023). Exploring the effect of overlapping institutional applications on panel decision-making. *Research Policy, 52*(9), Article 104868. [https://doi.org/10.1016/j.respol.2023.104868](https://doi.org/10.1016/j.respol.2023.104868)
-- Merton, R. K. (1968). The Matthew effect in science. *Science, 159*(3810), 56–63. [https://doi.org/10.1126/science.159.3810.56](https://doi.org/10.1126/science.159.3810.56)
-- Mingers, J., & Willmott, H. (2013). Taylorizing business school research: On the "one best way" performative effects of journal ranking lists. *Human Relations, 66*(8), 1051–1073. [https://doi.org/10.1177/0018726712467048](https://doi.org/10.1177/0018726712467048)
-- Podolny, J. M. (1993). A status-based model of market competition. *American Journal of Sociology, 98*(4), 829–872. [https://doi.org/10.1086/230091](https://doi.org/10.1086/230091)
-- Prato, M., Ertug, G., Castellucci, F., & Zou, T. (2024). The status of status research: A review of the types, functions, levels, and audiences. *Journal of Management, 50*(6), 2266–2308. [https://doi.org/10.1177/01492063241226918](https://doi.org/10.1177/01492063241226918)
-- Salandra, R., Salter, A., & Walker, J. T. (2022). Are academics willing to forgo citations to publish in high-status journals? Examining preferences for 4* and 4-rated journal publication among UK business and management academics. *British Journal of Management, 33*(3), 1254–1270. [https://doi.org/10.1111/1467-8551.12510](https://doi.org/10.1111/1467-8551.12510)
-- Tourish, D., & Willmott, H. (2015). In defiance of folly: Journal rankings, mindless measures and the ABS Guide. *Critical Perspectives on Accounting, 26*, 37–46. [https://doi.org/10.1016/j.cpa.2014.02.004](https://doi.org/10.1016/j.cpa.2014.02.004)
-- Walker, J. T., Fenton, E., Salter, A., & Salandra, R. (2019). What influences business academics' use of the Association of Business Schools (ABS) list? Evidence from a survey of UK academics. *British Journal of Management, 30*(3), 730–747. [https://doi.org/10.1111/1467-8551.12294](https://doi.org/10.1111/1467-8551.12294)
-- Walker, J. T., Salter, A., Fontinha, R., & Salandra, R. (2019). The impact of journal re-grading on perception of ranking systems: Exploring the case of the Academic Journal Guide and Business and Management scholars in the UK. *Research Evaluation, 28*(3), 218–231. [https://doi.org/10.1093/reseval/rvz010](https://doi.org/10.1093/reseval/rvz010)
+There is a broad literature on decision making in panels and committees, on journal lists and on status. A short review, with references, is in the [development manual](manual.html), under Related research.
 
 ## How to cite
 
@@ -119,7 +111,7 @@ Salter, A. (2026). *Well Matched: matching first-post candidates with European b
 
 ## Credits
 
-Developed by Ammon Salter, Warwick Business School.
+Developed by Ammon Salter, Warwick Business School. All materials created with Claude Opus 5.5, with review by Ammon Salter.
 
 Contributors and beta-testers: Federico Bignone (Warwick Business School), Christos Kolympiris (Warwick Business School), Rossella Salandra (University of Bath), Philipp Wähler (CUNEF) and Zou Na (University of Bath). They tested the tool and commented on it; they are not responsible for the tool or anything it tells you.
 
