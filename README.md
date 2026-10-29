@@ -72,34 +72,14 @@ Well Matched is shared under the [Creative Commons Attribution-NonCommercial 4.0
 
 ## Sources
 
-Well Matched draws on published journal lists and school rankings. The journal buckets (World leading, Leading, Excellent, Strong) and the school scores are Well Matched's own, and no grade or rank from any list is shown or kept. If you think a journal or school is placed wrongly, please take it up with the list or ranking makers; when their lists change, Well Matched will follow. The development manual explains how the sources are combined, under How the score is made and The school data.
+The journal buckets (World leading, Leading, Excellent, Strong) and the school scores are Well Matched's own. They combine these published lists and rankings, and no grade or rank from any of them is shown or kept.
+
+- **Journals:** Anne-Wil Harzing's Journal Quality List and the lists it compiles that we use (the Chartered ABS Academic Journal Guide, VHB, FNEGE, CNRS, Hcéres and the Danish BFI list), with the UT Dallas and FT50 journal lists.
+- **Schools:** the UT Dallas research rankings, the QS subject ranking for business and management, the QS World University Rankings, the FT Research Insights ranking and REF 2021.
+
+If you think a journal or school is placed wrongly, please take it up with the list or ranking makers. Full citations, with links, are in the [development manual](manual.html), under Sources and credits.
 
 **A note on status hierarchies.** Journal lists and school ranking tables are status hierarchies built on reputation: what people in the field believe, not what is true. We do not endorse them, and they are unreliable for judging individual people, departments or even universities. Committees are made up of people, just like you. Hiring early-career academics is hard, and in the face of uncertainty committees often fall back on weak signals of status. They may not consult the lists or ranking tables directly, but they are highly likely to be aware of them. Well Matched draws on these hierarchies to show how a committee is likely to read a record, not how it should be read. It looks only at shortlisting, the first stage; later stages bring in other factors, such as the presentation, interviews and local preferences. See the development manual, under The limits of the tool and Related research, for further details.
-
-<details>
-<summary>The sources in full</summary>
-
-Journals. The journal buckets (World leading, Leading, Excellent, Strong) are Well Matched's own. We draw on Anne-Wil Harzing's Journal Quality List and on each of the lists it compiles that we use, together with the UT Dallas and FT lists. No grade from any list is shown or kept.
-
-- Harzing, A.-W. (2026). Journal Quality List, 72nd edition, 27 March 2026. <https://harzing.com/resources/journal-quality-list>
-- Chartered Association of Business Schools (2024). Academic Journal Guide 2024. <https://charteredabs.org/academic-journal-guide/academic-journal-guide-2024>
-- VHB, German Academic Association for Business Research (2024). VHB Publication Media Rating 2024. <https://www.vhbonline.org/en/services/vhb-rating-2024>
-- FNEGE (2025). Classement des revues scientifiques en sciences de gestion et management 2025. <https://fnege.org/classement-des-revues-scientifiques-en-sciences-de-gestion/>
-- CNRS, Section 37 Économie et Gestion (2020). Catégorisation des revues en Économie et en Gestion, version 5.07, June 2020. <https://www.gate.cnrs.fr/wp-content/uploads/2021/12/categorisation37_liste_juin_2020-2.pdf>
-- Hcéres (2021). Liste des revues, SHS1 Économie et gestion, 9 July 2021. <https://www.hceres.fr/en/node/1902>
-- Danish Ministry of Higher Education and Science (2021). BFI authority list of series (Den Bibliometriske Forskningsindikator), final edition 2021; no longer online.
-- Naveen Jindal School of Management, UT Dallas. The 24 journals of the UTD Top 100 Business School Research Rankings. <https://jsom.utdallas.edu/the-utd-top-100-business-school-research-rankings/>
-- Financial Times. The 50 journals used in FT rankings (FT50). <https://www.ft.com/content/db863a0a-6524-45f9-bc52-fee997634bdc>
-
-Schools. Each school's score is Well Matched's own, a composite of these sources, banded, and adjusted where needed to reflect academic reputation in business schools and universities not captured by these lists. For UK schools, the REF 2021 grade point average is used to correct cases where QS places a school well above its REF result. No rank from any source is shown or kept.
-
-- Naveen Jindal School of Management, UT Dallas. UTD Top 100 Business School Research Rankings, worldwide, 2021 to 2025. <https://jsom.utdallas.edu/the-utd-top-100-business-school-research-rankings/worldRankings>
-- QS Quacquarelli Symonds (2026). QS World University Rankings by Subject 2026: Business and Management Studies (academic reputation). <https://www.topuniversities.com/university-subject-rankings/business-management-studies>
-- QS Quacquarelli Symonds (2025). QS World University Rankings 2026 (used for the list of world-leading universities). <https://www.topuniversities.com/world-university-rankings/2026>
-- Financial Times (2025). FT Research Insights ranking 2025. <https://www.ft.com/content/a84f7e35-e062-4a47-8da2-5e11efb3f05c>
-- REF 2021. Results, Unit of assessment 17: Business and Management Studies. <https://results2021.ref.ac.uk/profiles/units-of-assessment/17>
-
-</details>
 
 ## Related research
 
@@ -113,6 +93,6 @@ Salter, A. (2026). *Well Matched: matching first-post candidates with European b
 
 Developed by Ammon Salter, Warwick Business School. All materials created with Claude Opus 5.5, with review by Ammon Salter.
 
-Contributors and beta-testers: Federico Bignone (Warwick Business School), Christos Kolympiris (Warwick Business School), Rossella Salandra (University of Bath), Philipp Wähler (CUNEF) and Zou Na (University of Bath). They tested the tool and commented on it; they are not responsible for the tool or anything it tells you.
+Contributors and beta-testers: Federico Bignone (Warwick Business School), Christos Kolympiris (Warwick Business School), Rossella Salandra (University of Bath), Philipp Wähler (CUNEF) and Zou Na (University of Bath). They tried the tool and gave feedback. Any errors are the developer's own.
 
 Suggestions, experiments and experiences, positive or negative, are welcome: [ammon.salter@wbs.ac.uk](mailto:ammon.salter@wbs.ac.uk).
