@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use Well Matched, please cite it as below."
+title: "Well Matched: matching first-post candidates with European business school departments"
+type: software
+authors:
+  - family-names: Salter
+    given-names: Ammon
+    affiliation: "Warwick Business School, University of Warwick"
+    email: ammon.salter@wbs.ac.uk
+license: CC-BY-NC-4.0
+date-released: 2026-10-28
+version: "1.0"
+doi: "[DOI to be added]"

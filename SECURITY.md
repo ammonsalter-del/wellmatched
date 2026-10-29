@@ -1,0 +1,69 @@
+# Security
+
+## Supported versions
+
+| Version | Supported |
+| ------- | --------- |
+| 1.x     | Yes       |
+
+## How Well Matched handles your information
+
+Well Matched is a single web page with no server, no database and no account. It runs in your own browser. It comes in three versions (see The Well Matched family in the development manual); this file covers all three.
+
+### Use an API (the website)
+
+- **Your API key** is typed into the page and sent only to Anthropic (`api.anthropic.com`), with each request to read your materials. It is never sent to the developer or anyone else. If you tick "Remember my key on this computer", it is kept in this browser's local storage on this computer; "Forget my key" removes it. On a shared computer, do not tick it.
+- **Your materials** (CV, letter, paper and the departments' information) are read in your browser and sent only to Anthropic, under your own account's settings.
+- **Staff names** for each department are sent to OpenAlex (`api.openalex.org`) to count their publications.
+
+### In your Claude and Do it yourself
+
+- Your materials go only to Claude, through your own Claude account and under that account's settings. There is no API key.
+- Neither version sends anything to OpenAlex, and Do it yourself looks nothing up on the web.
+
+### Analytics
+
+We use Google Analytics purely to track use by country and time. No other information is collected. Counting use helps us show that this free educational tool is being used, and so gain credit for the work that goes into it.
+
+- It runs on the website only, and only after you press Allow on the notice at the foot of the page. If you press No thanks, nothing is loaded from Google Analytics. You can change your choice at any time from the link under Your data at the foot of the page.
+- Nothing you type or upload is sent to Google. Google signals and advertising features are switched off.
+- Your choice is kept in this browser's local storage.
+
+## For university IT and data protection teams
+
+- **Nothing reaches the developer.** There is no server, database or account, so the developer never receives a candidate's materials, key or results.
+- **Materials go to the candidate's own provider.** A candidate's materials are sent to Anthropic under their own API key or Claude account, and that account's terms and settings apply.
+- **Public staff information only.** When the website version looks up a department, it reads only the school's own public staff pages and notes professional facts: name, title, research, journals and the page's address.
+- **Analytics only with consent.** Google Analytics is loaded only after a visitor allows it, and counts visits by country and time.
+- **Fully auditable.** The complete source code, including every network call, is public in this repository.
+- **Run it yourself.** Institutions can download the repository and serve it from their own servers.
+
+## Third-party resources
+
+- Anthropic's API (`api.anthropic.com`), for the reading, in the website version
+- OpenAlex (`api.openalex.org`), for publication counts, in the website version
+- Google Fonts (`fonts.googleapis.com`), for the typeface
+- Google Analytics (`googletagmanager.com`), on the website only and only with consent
+- pdf.js 3.11.174 and mammoth.js 1.6.0, the PDF and Word readers, kept in `lib/` and loaded from this repository
+
+## Repository security
+
+The repository is the real security boundary: whoever can push to it changes what every future visitor loads. Current position: a single maintainer, with no write access granted to anyone else; two-factor authentication on the GitHub account [confirm]; branch protection on main [confirm in settings]; GitHub security features (Dependabot and code scanning) [confirm in settings]; and only the two libraries in `lib/` as dependencies.
+
+## Keeping your key safe
+
+Make a key just for this tool at [console.anthropic.com](https://console.anthropic.com), set a monthly spending limit on it, and delete it when you no longer need it. Never paste your key into a copy of the page from a source you do not trust.
+
+## Text from websites
+
+When the tool reads departments' web pages, it treats what it finds as information, never as instructions. A page cannot tell it to do anything.
+
+## Reporting a problem
+
+If you find a security or privacy problem, please email [ammon.salter@wbs.ac.uk](mailto:ammon.salter@wbs.ac.uk) rather than opening a public issue. Say what you found, how to repeat it and what harm it could do. We will acknowledge it within 7 days and aim to fix confirmed problems promptly.
+
+## What this file does not cover
+
+- Problems in browsers, operating systems or third-party services (GitHub Pages, Anthropic, OpenAlex, Google)
+- Problems arising from changes people make to their own copies of the code
+- Errors in the tool's readings or advice (please report those as ordinary issues)
