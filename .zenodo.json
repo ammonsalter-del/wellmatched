@@ -1,0 +1,15 @@
+{
+  "title": "Well Matched: matching first-post candidates with European business school departments",
+  "upload_type": "software",
+  "description": "A free, open-source, browser-based tool that reads a PhD candidate's materials the way a shortlisting committee might and shows how well they match European business school departments. It runs on the user's own Anthropic API key; nothing is sent to the developer.",
+  "creators": [{"name": "Salter, Ammon", "affiliation": "Warwick Business School, University of Warwick"}],
+  "contributors": [
+    {"name": "Bignone, Federico", "affiliation": "Warwick Business School", "type": "Other"},
+    {"name": "Kolympiris, Christos", "affiliation": "Warwick Business School", "type": "Other"},
+    {"name": "Salandra, Rossella", "affiliation": "University of Bath", "type": "Other"},
+    {"name": "Wähler, Philipp", "affiliation": "CUNEF", "type": "Other"},
+    {"name": "Zou, Na", "affiliation": "University of Bath", "type": "Other"}
+  ],
+  "license": "cc-by-nc-4.0",
+  "keywords": ["academic job market", "business schools", "PhD", "hiring committees", "AI", "Claude"]
+}
