@@ -204,18 +204,18 @@ footer{font-size:.95rem;color:var(--muted);display:grid;gap:14px;padding-top:8px
   <div class="hero-in">
     <h1 class="logo"><img src="images/well-matched-logo.png" alt="Well Matched" width="840" height="375"></h1>
     <div class="hero-text">
-      <span class="eyebrow">First faculty post · European business schools</span>
+      <span class="eyebrow">First faculty post · European business and management schools</span>
       <p class="hero-line">See your record through a hiring committee's eyes.</p>
       <p class="hero-sub">It searches the schools' own websites, reads your materials against each department, and shows where you match best, and why.</p>
     </div>
   </div>
 </section>
-<div class="openbar" role="note"><strong>Free, open source and private. The developer sees nothing you enter, and nothing it tells you.</strong> <span>There is no server and nothing is kept. Your materials go only to Anthropic, using your own API key, to be read.</span></div>
+<div class="openbar" role="note"><strong>Free, open source and private.</strong> <span>Everything runs in your browser. Your materials go only to Anthropic, with your own API key, under your own account's settings. The tool itself keeps nothing.</span></div>
 <div class="wrap">
   <header style="display:grid;gap:12px">
     <svg class="europe" id="europe" viewBox="0 0 1000 640" aria-hidden="true" focusable="false"></svg>
     <div class="lede">
-      <p><strong>This is for PhD students and postdocs looking for their first teaching and research post at a business school in Europe.</strong> It reads your materials the way a shortlisting committee does, then shows how well you match each department you are considering.</p>
+      <p><strong>This is for PhD students and postdocs looking for their first teaching and research post at a business or management school in Europe.</strong> It is an AI tool that assesses your materials the way a shortlisting committee does, then shows how well you match each department you are considering. It is intended to be supportive and developmental, and it is a prototype. Please try it and give feedback to improve it.</p>
       <h3 class="lede-h">What you get</h3>
       <ul class="lede-list">
         <li>for each department you name, a score out of 100 and a reading of how its committee might see you, square by square;</li>
@@ -228,16 +228,17 @@ footer{font-size:.95rem;color:var(--muted);display:grid;gap:14px;padding-top:8px
       <h3 class="lede-h">How it works</h3>
       <figure class="loopmap"><img src="images/well-matched-cycle.jpg" alt="How Well Matched works, as a cycle: 1 You add your CV and the departments you like; 2 search agents read the schools' own websites; 3 Claude reads you as each committee might; 4 an agent checks and edits each reading; 5 you get your matches, places and a report to keep; and you can run it again whenever something changes." width="1400" height="957" loading="lazy"><figcaption><button type="button" class="linkbtn" id="open-map">See the detailed map</button></figcaption></figure>
       <p>Well Matched uses a team of Claude agents that search school websites, read your materials and check each reading, within fixed rules. Like any AI, it can make mistakes.</p>
-      <p><strong>It shows how hiring committees tend to behave, not how they ought to.</strong></p>
-      <p><strong>The aim is to help you apply where you fit, rather than everywhere.</strong> Each application costs you time, and a poor fit costs the committee time too. The tool does not write or polish your application. It shows you what a committee is likely to see.</p>
+      <p><strong>It shows how a committee is likely to assess you.</strong> The <a href="#faq" id="faq-link">FAQs</a> say why, and where it falls short.</p>
+      <p><strong>The aim is to help you apply where you fit, rather than everywhere.</strong> Each application costs you time, and a poor fit costs the committee time too. The tool does not write your application. It shows how a committee might read it, and what you might say to each department.</p>
       <p><strong>It stops at the shortlist.</strong> Careers take many paths, and where you fit now may not be where you work later. People move, take breaks and grow as teachers. Research takes time, publishing has an element of luck, and a journal's standing is not a perfect guide to a paper's quality.</p>
     </div>
-    <details class="why"><summary><b>Your privacy</b>: there is no back end, and only you see your information</summary><p>Well Matched is free and open source, for the greater good: no personal information is collected, and there is no advertising, no fee and no commercial use. <span class="ga-note" hidden>Well Matched uses Google Analytics purely to track use by country and time. No other information is collected. Counting use shows that this free educational tool is being used, and earns credit for the work that goes into it.</span> Your materials leave your computer only to go to Anthropic, with your own key, to be read, under the settings of your Anthropic account. There is no back end: no server, no database and no account. The page runs in your own browser, and only you see what you put in and what it finds. The developer sees nothing you put into this tool. Your files are read in your own browser and sent only to Anthropic's Claude, using your own API key and under Anthropic's terms for its API. When Claude looks up a department's staff, it reads only the school's own public staff pages and notes professional facts: name, title, research, journals and the page's address. Nothing else about anyone is collected. The tool saves nothing except your key, and only on this computer if you ask it to. Nothing goes to the developer or anyone else. When you close the page, your material is gone from it.</p><p><b>Is my material used to train Claude?</b> Not by default. This page sends your material to Anthropic through its API, and Anthropic says it does not use what is sent through its API to train its models unless you choose to let it. See Anthropic's <a href="https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training" target="_blank" rel="noopener">privacy page on training</a> and its <a href="https://www.anthropic.com/legal/commercial-terms" target="_blank" rel="noopener">commercial terms</a>. If you also use Claude in a claude.ai account, that account has its own setting, Help improve our AI models, under Privacy: <a href="https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings" target="_blank" rel="noopener">how to turn it off</a>.</p></details>
+    <details class="why"><summary><b>Your privacy</b>: there is no back end, and only you see your information</summary><p>Well Matched is free and open source, for the greater good: no personal information is collected, and there is no advertising, no fee and no commercial use. <span class="ga-note" hidden>Well Matched uses Google Analytics purely to track use by country and time. No other information is collected. Counting use shows that this free educational tool is being used, and earns credit for the work that goes into it.</span> Your materials leave your computer only to go to Anthropic, with your own key, to be read, under the settings of your Anthropic account. There is no back end: no server, no database and no account. The page runs in your own browser, and only you see what you put in and what it finds. Your files are read in your own browser and sent only to Anthropic's Claude, using your own API key and under Anthropic's terms for its API. When Claude looks up a department's staff, it reads only the school's own public staff pages and notes professional facts: name, title, research, journals and the page's address. Nothing else about anyone is collected. The tool saves nothing except your key, and only on this computer if you ask it to. Nothing goes anywhere else. When you close the page, your material is gone from it.</p><p><b>Is my material used to train Claude?</b> Not by default. This page sends your material to Anthropic through its API, and Anthropic says it does not use what is sent through its API to train its models unless you choose to let it. See Anthropic's <a href="https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training" target="_blank" rel="noopener">privacy page on training</a> and its <a href="https://www.anthropic.com/legal/commercial-terms" target="_blank" rel="noopener">commercial terms</a>. If you also use Claude in a claude.ai account, that account has its own setting, Help improve our AI models, under Privacy: <a href="https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings" target="_blank" rel="noopener">how to turn it off</a>.</p></details>
+    <details class="why" id="faq"><summary><b>FAQs about Well Matched</b></summary><p><b>Why use this?</b> You are about to apply for your first post, and you cannot see how a committee will read your file. Most people apply everywhere, which costs time and rarely works. Well Matched reads your materials and each department's own pages the way a shortlisting committee is likely to, and tells you where you fit, where you do not yet, and what to say to each one.</p><p><b>Why should I trust its reading?</b> Committees make decisions under uncertainty. A complex cocktail of factors shapes their choices, and within it status hierarchies, journal lists and school rankings act as weak signals. Well Matched draws on those signals to show how a committee is likely to read a record.</p><p><b>Where does it fall short?</b> It is AI, and it makes mistakes. The search can miss people on a school's pages, and the readings vary a little from one run to the next, so a point or two of difference means nothing. It knows European business schools and only the shortlisting stage; interviews and local preferences come later. Check what it found before you read its verdict, and weigh it alongside the advice of your supervisor and colleagues.</p><p><b>How well has it been tested?</b> Not extensively. Well Matched is a prototype. The rules come from the developer's experience and have been checked against invented candidates and by beta-testers with their own materials, but not against real hiring outcomes. Comments are welcome.</p><p><b>Is this a judgement of me?</b> No. You are talented and capable, and the tool is there to tell you how others read materials about you, which is a different thing. Academic careers are long, and as yours develops the judgements will shift from where you trained to what you have done. Where people start in the academic labour market is rarely where they end, and there are many pathways. The developer finished a DPhil at the Science Policy Research Unit, with no publications. It was a wonderful training, but it would have got a poor match at many business schools.</p><p><b>What if part of it does not feel supportive?</b> The tool is meant to be developmental and supportive, since applying for a first academic post is stressful enough. The developer has tried to hold it to that tone, but AI models can drift. Please remember that the readings are generated by AI, which is a machine.</p><p><b>Does it allow for bias?</b> No. Well Matched makes no allowance for the biases a committee may hold about nationality, race, gender or any other personal characteristic, what the law often calls protected characteristics. Since AI is trained on human data, its reading may carry implicit human biases of its own. The tool does not ask for your personal characteristics, and it is best not to give it any. It does take some account of language skills and reasons for moving, but these count only at the margin. In the developer's experience, academic committees try to be fair. For career breaks it follows the same principle as the European Research Council, extending the window of assessment by a year for every significant break.</p><p><b>Why does it score whether senior staff would warm to me?</b> Committees tend to favour people like themselves, so the tool takes account of it. It is a small part of the overall evaluation.</p><p><b>Why does it name real people?</b> The readings name a department's staff from the school's own pages and their publication records, which are public. Nothing about anyone is kept.</p><p><b>What if my PhD is from outside Europe?</b> Your PhD school is placed from worldwide rankings, so it counts in the same way as any other. The departments it reads, and the places and wild cards it suggests, are European business schools, which is what the tool knows.</p><p><b>What if my PhD school is not in the rankings?</b> PhD training is shown as No information and left out of the score, the status square is left to Claude's reading of the department, and no places or wild cards can be suggested from the rankings.</p><p><b>Was personal data used to build it?</b> No personal data or real cases were used in making the tool. It rests on public rankings and lists, the developer's own knowledge and experience, comments from beta-testers on their experience of using it with their own materials, and many runs with fictional personas.</p><p><b>Is this a university tool?</b> No. Nothing from Warwick Business School went into it, the university does not use it, and no university should: it is for students, not committees. It endorses no list or ranking. It shares one person's experience of how applicants are assessed, gathered at several universities over many rounds of shortlisting for different roles, and it is informed by research on the topic.</p><p><b>Is my material used to train the AI?</b> Not by default. On this website your material goes to Anthropic through its API, and Anthropic says it does not use what is sent that way to train its models unless you choose to let it. In the versions that run through a Claude account, it depends on the account's setting, Help improve our AI models, under Privacy. Anthropic sets this out in its <a href="https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training" target="_blank" rel="noopener">page on model training</a>, its <a href="https://www.anthropic.com/legal/commercial-terms" target="_blank" rel="noopener">commercial terms</a> for the API and its <a href="https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings" target="_blank" rel="noopener">note on the account setting</a>. The tool itself keeps nothing, and your key, if you ask the page to remember it, stays only in this browser.</p></details>
   </header>
 
   <section class="card" aria-labelledby="key-h">
     <div style="display:grid;gap:4px"><span class="eyebrow">Before you start</span><h2 id="key-h">Your Anthropic key</h2></div>
-    <div class="field" style="grid-column:1/-1"><label for="api-key">Your Anthropic API key</label><input type="password" id="api-key" autocomplete="off" spellcheck="false" placeholder="sk-ant-..."><span class="hint">The tool runs on your own Anthropic key. Your key goes only from this browser to Anthropic; the developer never sees it.</span><details class="keypop"><summary>About your key</summary><p>The cost of each run is charged to your Anthropic account, and the page shows what each run cost. The searching uses Claude Sonnet, which costs less; the reading uses the model you choose below.</p><p>Get a key at console.anthropic.com, under API keys; you will need to add credit there first. It is safest to make a key just for this tool and set a monthly spending limit on it.</p><p>If you tick Remember my key, it is kept in this browser on this computer. On a shared computer, leave it unticked.</p></details><details class="keypop"><summary>No API key? No problem</summary><p>You can also use Well Matched through your own personal or professional Claude account. Follow the instructions in the GitHub repository.</p></details><label class="cbox"><input type="checkbox" id="key-keep"> Remember my key on this computer</label><div class="actions"><button type="button" id="key-forget">Forget my key</button></div></div><fieldset class="pressure"><legend>Which Claude model?</legend><label class="cbox" style="white-space:normal"><input type="radio" name="model" value="claude-opus-5-5" checked> Claude Opus 5.5: works best</label><label class="cbox" style="white-space:normal"><input type="radio" name="model" value="claude-sonnet-5-5"> Claude Sonnet 5.5: about half the cost, a less careful reading</label></fieldset>
+    <div class="field" style="grid-column:1/-1"><label for="api-key">Your Anthropic API key</label><input type="password" id="api-key" autocomplete="off" spellcheck="false" placeholder="sk-ant-..."><span class="hint">The tool runs on your own Anthropic key. Your key goes only from this browser to Anthropic. A run on one department costs about $1.20; three departments about $2.50.</span><details class="keypop"><summary>About your key</summary><p>The cost of each run is charged to your Anthropic account, and the page shows what each run cost: about $1.20 for one department with Find it for me and about $2.50 for three, measured on 29 October 2026. The searching uses Claude Sonnet, which costs less; the reading uses the model you choose below.</p><p>Get a key at console.anthropic.com, under API keys; you will need to add credit there first. It is safest to make a key just for this tool and set a monthly spending limit on it.</p><p>If you tick Remember my key, it is kept in this browser on this computer. On a shared computer, leave it unticked.</p></details><details class="keypop"><summary>No API key? No problem</summary><p>You can also use Well Matched through your own personal or professional Claude account. Follow the instructions in the GitHub repository.</p></details><label class="cbox"><input type="checkbox" id="key-keep"> Remember my key on this computer</label><div class="actions"><button type="button" id="key-forget">Forget my key</button></div></div><fieldset class="pressure"><legend>Which Claude model?</legend><label class="cbox" style="white-space:normal"><input type="radio" name="model" value="claude-opus-5-5" checked> Claude Opus 5.5: works best</label><label class="cbox" style="white-space:normal"><input type="radio" name="model" value="claude-sonnet-5-5"> Claude Sonnet 5.5: about half the cost, a less careful reading</label></fieldset>
   </section>
 
   <section class="card" aria-labelledby="you-h">
@@ -273,10 +274,7 @@ footer{font-size:.95rem;color:var(--muted);display:grid;gap:14px;padding-top:8px
         <legend>Career breaks since you started your PhD (optional)</legend>
         <div class="field"><label for="f-leaves">Number of significant career breaks (six months or more), e.g. maternity or parental leave, a health issue</label><input type="text" inputmode="numeric" id="f-leaves" placeholder="e.g. 1" style="max-width:240px"></div>
         <details class="why">
-          <summary><b>What counts as a significant career break, and why it is asked</b></summary>
-          <p>A significant career break is six months or more away from research, for example maternity or parental leave or a health issue. Committees tend to judge a record against the years since a candidate started their PhD: the more years, the higher the expectations. A significant career break should not count against you, so the tool takes a year off for each one before it judges your record. You do not have to say why.</p>
-          <p>This is not positive discrimination, which in most of Europe is unlawful in hiring, or allowed only in very specific circumstances. In the UK, an employer may favour a candidate because of a protected characteristic only as a tie-breaker between candidates who are as qualified as each other, and never as a set policy (<a href="https://www.legislation.gov.uk/ukpga/2010/15/section/159" target="_blank" rel="noopener">Equality Act 2010, section 159</a>; <a href="https://www.gov.uk/government/publications/positive-action-in-the-workplace-guidance-for-employers" target="_blank" rel="noopener">GOV.UK, Positive action in the workplace: guidance for employers</a>). The tool adds no credit for a break. It only stops the time counting against you.</p>
-        </details>
+          <summary><b>What counts as a significant career break, and why it is asked</b></summary><p>A significant career break is six months or more away from research, for example parental leave or a health issue. Committees tend to judge a record against the years since a candidate started their PhD, so the tool takes a year off for each break before it judges yours. This follows the same principle as the European Research Council, which extends its eligibility windows for documented breaks. You do not have to say why. The tool adds no credit for a break; it only stops the time counting against you.</p></details>
       </fieldset>
       <div class="field"><label for="f-lang">Languages you speak, and how well</label><input type="text" id="f-lang" placeholder="e.g. English fluent, Danish basic, partner is Danish"></div>
       <div class="field"><label for="f-ambition">Five years into your career, how many papers do you expect to have, and at what level?</label><input type="text" id="f-ambition" placeholder="e.g. six papers, two of them in World leading journals"><span class="hint">Be realistic. This is to give the tool a sense of your level of expectations.</span></div>
@@ -395,18 +393,20 @@ footer{font-size:.95rem;color:var(--muted);display:grid;gap:14px;padding-top:8px
 
   <footer>
     <h3 class="foot-h">About Well Matched</h3>
-    <p>Designed, developed and reviewed by Ammon Salter, Warwick Business School, using Claude Opus 5.5. Contact: <a href="mailto:ammon.salter@wbs.ac.uk">ammon.salter@wbs.ac.uk</a> · <a href="https://ammonsalter.org" target="_blank" rel="noopener">ammonsalter.org</a></p>
+    <p>Designed, developed and reviewed by Ammon Salter, Warwick Business School, using Claude Opus 5.5 and Claude Fable 5.1. Contact: <a href="mailto:ammon.salter@wbs.ac.uk">ammon.salter@wbs.ac.uk</a> · <a href="https://ammonsalter.org" target="_blank" rel="noopener">ammonsalter.org</a></p>
     <p><strong>Well Matched is open source.</strong> It is shared under the <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial 4.0 licence (CC BY-NC 4.0)</a>: free to use, adapt and share for non-commercial purposes, with credit. You may develop your own version, with credit to Well Matched and its contributors.</p>
     <p>Offer suggestions, experiment with it, and share your experience, positive or negative, with the developer.</p>
     <details class="contrib"><summary>Contributors and beta-testers</summary><ul><li>Federico Bignone, Warwick Business School</li><li>Christos Kolympiris, Warwick Business School</li><li>Rossella Salandra, University of Bath</li><li>Philipp Wähler, CUNEF</li><li>Zou Na, University of Bath</li></ul><p>They tried the tool and gave feedback. Any errors are the developer's own.</p></details>
     <p><strong>How to cite:</strong> Salter, A. (2026). Well Matched: matching first-post candidates with European business school departments [Software]. Zenodo. https://doi.org/[DOI to be added]</p>
     <p>If you teach entrepreneurship or innovation, you might like to use the games from <a href="https://ieplaybook.substack.com" target="_blank" rel="noopener">The I&amp;E Playbook</a>.</p>
     <h3 class="foot-h">Your data</h3>
-    <p>The approach is simple. Nothing you enter is captured or recorded, and there is no database behind the tool. There is no advertising, no fee and no paid version. What you see is what you get. <span class="ga-note" hidden>Well Matched uses Google Analytics purely to track use by country and time. No other information is collected. Counting use shows that this free educational tool is being used, and earns credit for the work that goes into it. <button type="button" class="linkbtn ga-change">Change my choice about counting visits</button></span></p>
-    <p>The page runs in your own browser. What you put in goes only to Anthropic, with your own key, to be read, and what happens to it there is between you and the settings you choose in your Anthropic account. The developer sees none of it.</p>
+    <p>The approach is simple. The tool itself captures and records nothing, and there is no database behind it. There is no advertising, no fee and no paid version. What you see is what you get. <span class="ga-note" hidden>Well Matched uses Google Analytics purely to track use by country and time. No other information is collected. Counting use shows that this free educational tool is being used, and earns credit for the work that goes into it. <button type="button" class="linkbtn ga-change">Change my choice about counting visits</button></span></p>
+    <p>The page runs in your own browser. What you put in goes only to Anthropic, with your own key, to be read, and what happens to it there is between you and the settings you choose in your Anthropic account.</p>
     <h3 class="foot-h">Disclaimer</h3>
-    <p>Well Matched reflects experience, not an ideal: its rules describe how hiring committees tend to behave, without endorsing it. This tool gives an indication, not advice. It cannot know how any committee will decide and makes no promise about any application. Use it as one view among others, alongside advice from your supervisor and colleagues. The developer accepts no responsibility for decisions made using it.</p>
-    <p>This tool is a prototype. It is designed to help, but it is AI based and therefore is imperfect and makes mistakes. Each hiring round is different, and each candidate is different. It is based on past experience, which is not easy to codify.</p>
+    <p>Well Matched is built on experience of how hiring committees assess candidates. This tool gives an indication, not advice. It cannot know how any committee will decide and makes no promise about any application. Use it as one view among others, alongside advice from your supervisor and colleagues. The developer accepts no responsibility for decisions made using it.</p>
+    <p>No personal data or real cases were used in making the tool: it rests on public rankings and lists, the developer's own knowledge and experience, comments from beta-testers on their experience of using it with their own materials, and many runs with fictional personas.</p>
+    <p>Nothing from Warwick Business School went into it, the university does not use it, and no university should: it is for students, not committees.</p>
+    <p>This tool is a prototype. It is designed to help, but it is AI based and therefore is imperfect and makes mistakes. Each hiring round is different, and each candidate is different.</p>
     <h3 class="foot-h">Sources</h3>
     <p>Well Matched draws on published journal lists and school rankings. Using them implies no endorsement either way: their makers have not endorsed Well Matched, and Well Matched does not endorse them. The journal buckets (World leading, Leading, Excellent, Strong) and the school scores are Well Matched's own, and no grade or rank from any list is shown or kept. If you think a journal or school is placed wrongly, please take it up with the list or ranking makers; when their lists change, Well Matched will follow.</p>
     <details class="contrib"><summary>The sources in full</summary><p>Journals. The journal buckets (World leading, Leading, Excellent, Strong) are Well Matched's own. Well Matched draws on Anne-Wil Harzing's Journal Quality List and on each of the lists it compiles that it uses, together with the UT Dallas and FT lists. No grade from any list is shown or kept.</p><ul class="cites"><li>Harzing, A.-W. (2026). Journal Quality List, 72nd edition, 27 March 2026. <a href="https://harzing.com/resources/journal-quality-list" target="_blank" rel="noopener">harzing.com</a></li><li>Chartered Association of Business Schools (2024). Academic Journal Guide 2024. <a href="https://charteredabs.org/academic-journal-guide/academic-journal-guide-2024" target="_blank" rel="noopener">charteredabs.org</a></li><li>VHB, German Academic Association for Business Research (2024). VHB Publication Media Rating 2024. <a href="https://www.vhbonline.org/en/services/vhb-rating-2024" target="_blank" rel="noopener">www.vhbonline.org</a></li><li>FNEGE (2025). Classement des revues scientifiques en sciences de gestion et management 2025. <a href="https://fnege.org/classement-des-revues-scientifiques-en-sciences-de-gestion/" target="_blank" rel="noopener">fnege.org</a></li><li>CNRS, Section 37 Économie et Gestion (2020). Catégorisation des revues en Économie et en Gestion, version 5.07, June 2020. <a href="https://www.gate.cnrs.fr/wp-content/uploads/2021/12/categorisation37_liste_juin_2020-2.pdf" target="_blank" rel="noopener">www.gate.cnrs.fr</a></li><li>Hcéres (2021). Liste des revues, SHS1 Économie et gestion, 9 July 2021. <a href="https://www.hceres.fr/en/node/1902" target="_blank" rel="noopener">www.hceres.fr</a></li><li>Danish Ministry of Higher Education and Science (2021). BFI authority list of series (Den Bibliometriske Forskningsindikator), final edition 2021; no longer online.</li><li>Naveen Jindal School of Management, UT Dallas. The 24 journals of the UTD Top 100 Business School Research Rankings. <a href="https://jsom.utdallas.edu/the-utd-top-100-business-school-research-rankings/" target="_blank" rel="noopener">jsom.utdallas.edu</a></li><li>Financial Times. The 50 journals used in FT rankings (FT50). <a href="https://www.ft.com/content/db863a0a-6524-45f9-bc52-fee997634bdc" target="_blank" rel="noopener">www.ft.com</a></li></ul>
@@ -442,6 +442,8 @@ footer{font-size:.95rem;color:var(--muted);display:grid;gap:14px;padding-top:8px
 <script src="lib/mammoth.browser.min.js"></script>
 <script>
 (function(){
+/* The FAQs link in How it works opens the box (30 Oct 2026). */
+{ const l = document.getElementById("faq-link"), d = document.getElementById("faq"); if (l && d) l.addEventListener("click", () => { d.open = true; }); }
 "use strict";
 
 /* ---------- Dotted map of Europe behind the header ----------
@@ -511,7 +513,7 @@ const DEPT_ROWS = [
    drops out and the others are rescaled. Scores 1 to 4 map to 0 to 100. */
 const ELITE_SHIFT = 15, TRACK_FULL = 50, STACK_PER = 5, STACK_MAX = 15;
 const AREAS = [
-  {name:"Research record", weight:50, noTrack:35, rows:{papers:4, jmp:1, independence:1, prizes:1}},
+  {name:"Research record", weight:50, noTrack:35, rows:{papers:6, independence:1, prizes:1}},
   {name:"Match with the department", weight:12.5, noTrack:12.5, rows:{topics:1, journals:1, discipline:1, jmpfit:2, alike:1, values:1}},
   {name:"Status and reputation", weight:10, noTrack:32.5, rows:{phd:1, supervisors:2, referees:1, links:1, status:1}},
   {name:"Community", weight:7.5, noTrack:7.5, rows:{community:1}},
@@ -530,13 +532,13 @@ const AREAS = [
    journals, and only if it aligns with the candidate's supervisor or institution.
    Each published paper in a journal on none of the lists, beyond the first three, takes off 5 points.
    Full marks: 30 points at the top, falling with status to 15 (see fullMarksAt). */
-/* His choice, 18 Oct 2026: option C. An R&R earns 40%, 60% or 80% of a published paper by round ("2nd round R&Rs are 50/50 bets,
-   and higher at later rounds"); a round not stated counts as round 1. Full marks 30: one clear-top paper published. */
+/* His choice, 18 Oct 2026: option C, an R&R earning 40%, 60% or 80% of a published paper by round; turned down on 29 Oct 2026 to 30%, 45%
+   and 60% (his words: "the value of R&Rs is too high"; "We need to use a feather"). A round not stated counts as round 1. Full marks 30: one clear-top paper published. */
 const TIER_POINTS = {
-  elite:{"published":30, "r3":24, "r2":18, "r1":12, "submitted":2, "in preparation":1},
-  field:{"published":24, "r3":19, "r2":14, "r1":10, "submitted":2, "in preparation":1},
-  four: {"published":15, "r3":12, "r2":9,  "r1":6,  "submitted":1, "in preparation":0},
-  three:{"published":6,  "r3":5,  "r2":4,  "r1":2,  "submitted":0, "in preparation":0}
+  elite:{"published":30, "r3":18, "r2":14, "r1":9, "submitted":2, "in preparation":1},
+  field:{"published":24, "r3":14, "r2":11, "r1":7, "submitted":2, "in preparation":1},
+  four: {"published":15, "r3":9, "r2":7,  "r1":5,  "submitted":1, "in preparation":0},
+  three:{"published":6,  "r3":4,  "r2":3,  "r1":2,  "submitted":0, "in preparation":0}
 };
 /* His point, 18 Oct 2026: papers with many authors in alphabetical order hurt. Four or more authors listed alphabetically: half points. */
 const ALPHA_AUTHORS = 4, ALPHA_SHARE = 0.5;
@@ -578,17 +580,35 @@ function tierOf(journal, claudeLevel){
    R&Rs taper: the best counts in full, the next at a third, then a sixth, then a twelfth (his ruling, 18 Oct 2026).
    With no place (the "about you" row), everything counts in full and nothing is taken off. Numbers set by Claude, his to change. */
 const LEVEL_PLACE = {"mostly 4*": 3, "4* and 4": 15, "4 and 3": 50, "mostly 3": 150};
+/* The level a group publishes at, read from the OpenAlex lines in the people box (29 Oct 2026): each person's best bucket in the last
+   ten years, then the group. Deterministic, so the bar does not change between runs; Claude's one-word level is used only when the
+   box holds no OpenAlex lines (pasted text). section: a heading that opens the part of the box to read, or null for all of it. */
+function levelFromPeople(text, section){
+  if (!text) return null; let s = String(text);
+  if (section){ const i = s.indexOf(section); if (i < 0) return null; s = s.slice(i); const j = s.search(/\n\s*\n(?:Senior staff|Recent hires|Found by Claude|The search|No recent)/); if (j > 0) s = s.slice(0, j); }
+  const rank = {"World leading": 4, "Leading": 3, "Excellent": 2, "Strong": 1}; const bests = [];
+  for (const line of s.split("\n")){ let best = 0; for (const m of line.matchAll(/\((World leading|Leading|Excellent|Strong)\) \d+/g)) best = Math.max(best, rank[m[1]]);
+    /* No OpenAlex line (the free limit was reached, or the person was not found there): grade the journals the agent read off the staff page. */
+    if (!best){ const sp = line.match(/Publishes in \(from the staff page\): ([^\n]*?)(?:\. (?:Edits|Page|Year|Appointed|Research):|\.?$)/); if (sp) for (const j of sp[1].split(/;|,/)) best = Math.max(best, rank[oaGrade(j.trim())] || 0); }
+    if (best) bests.push(best); }
+  if (!bests.length) return null; const n = bests.length, c = k => bests.filter(b => b >= k).length;
+  const level = c(4) * 2 >= n ? "mostly 4*" : c(3) * 2 >= n ? "4* and 4" : c(2) * 2 >= n ? "4 and 3" : "mostly 3";
+  return {level, n};
+}
+/* The bar place for a computed level: with three or more records the level's place; with fewer, a blend by n/3 of that place and the
+   school's rank place (thin-sample rule, 29 Oct 2026). */
+function levelPlace(lp, schoolPlace){ if (!lp) return null; const p = LEVEL_PLACE[lp.level], w = Math.min(1, lp.n / 3); return schoolPlace == null ? p : Math.round(p * w + schoolPlace * (1 - w)); }
 /* Journal sympathy (his ruling, 28 Oct 2026): extra points per paper in a journal the senior staff publish in or edit, any stage. */
 const SYM_PTS = {elite: 2, field: 2, four: 1.5, three: 1}, SYM_CAP = 3;
 const LOW_CAP = 2, LOW_BELOW3_PTS = 2, LOW_PENALTY_MAX = 3, RR_TAPER = [1, 1/3, 1/6, 1/12];
 function ramp(place, from, to){ if (place == null) return 1; if (place <= from) return 0; if (place >= to) return 1; return Math.log(place / from) / Math.log(to / from); }
 function lowShare(place){ return ramp(place, 5, 150); }
 /* Full marks fall with status on the same slope: 30 at place 3 or better, 15 by place 150; 30 with no place (his ruling, 18 Oct 2026). */
-/* PhD training (his ruling, 18 Oct 2026): the PhD school's own standing on the same slope, 100 at place 5 or better, easing to 40 by place 150.
+/* PhD training (his ruling, 18 Oct 2026): the PhD school's own standing on the same slope, 100 at place 3 or better, 70 by place 15, 40 by place 150 (his ruling, 29 Oct 2026: Warwick is not elite).
    It sits in Status and reputation with the supervisors, referees, links and the status match. Numbers set by Claude, his to change. */
 function phdTraining(name){
   const place = placeOf(name); if (place == null) return {score:null, note:"Your PhD school could not be matched to the rankings.", evidence:""};
-  const pct = Math.round(100 - 60 * ramp(place, 5, 150));
+  const pct = Math.round(place <= 15 ? 100 - 30 * ramp(place, 3, 15) : 70 - 30 * ramp(place, 15, 150));
   return {pct, score: pct>=75 ? 4 : pct>=50 ? 3 : pct>=25 ? 2 : 1, note: pct >= 90 ? "Training at one of the strongest schools in the rankings is likely to count for a lot with committees." : pct >= 65 ? "Training at a well-regarded school is likely to work in your favour." : "Your PhD school's standing may give you some help; your record and your work are likely to carry more of the weight.", evidence:""};
 }
 function fullMarksAt(place){ return place == null ? FULL_MARKS : FULL_MARKS - 15 * ramp(place, 3, 150); }
@@ -755,7 +775,7 @@ const EDIT_GUIDE = `You edit short readings written for a PhD candidate about ac
 - cut or replace sloppy or machine-sounding words (for example delve, leverage, robust, crucial, pivotal, landscape, showcase, underscore, seamless, holistic, foster, realm, testament) and filler;
 - make any statement of an outcome tentative, and remove predictions (within reach, safe, will be hired, guaranteed, certainly, definitely);
 - use plain British English with English understatement; no hype or superlatives (excellent, outstanding, exceptional, perfect, ideal, great, huge, real standing); no American phrasing (reach out, stand out, a great fit); never use these words: lands, landed, scaffolding, reach out, stand out, world-class, top-notch, thrive, unlock, empower, elevate, journey, passionate, excited, impactful, game-changer, rockstar, next level; no dashes used as punctuation; short sentences.
-Keep names, journals and numbers exactly as written. Never add a fact, a name or a claim. Keep each part no longer than it is. If a part is fine, return it unchanged; if a point cannot be saved, drop it.
+Keep names, journals and numbers exactly as written. Never add a fact, a name or a claim. Keep each part no longer than it is, and keep the sentence that names a recent hire. If a part is fine, return it unchanged; if a point cannot be saved, drop it.
 Reply with only one JSON object: {"departments":[{"department":"the department's name exactly as given","reading":"","make_case":[""],"questions":[""],"strengthen":""}]}`;
 const PLAIN = [[/\bcrucial\b/gi, "key"], [/\bpivotal\b/gi, "key"], [/\brobust\b/gi, "strong"], [/\bleverag(e|es|ed|ing)\b/gi, "use"], [/\bshowcas(e|es|ed|ing)\b/gi, "show"], [/\bunderscor(e|es|ed|ing)\b/gi, "show"],
   [/\bfoster(s|ed|ing)?\b/gi, "build"], [/\blandscape\b/gi, "field"], [/\bseamless(ly)?\b/gi, "smooth"], [/\bholistic\b/gi, "broad"], [/\bdelve[sd]?\b/gi, "look"], [/\bsynerg(y|ies)\b/gi, "fit"],
@@ -810,7 +830,7 @@ const AGENT_RULES = `Rules for searching:
 Reply with only one JSON object: {"people":[{"name":"","title":"","appointed":"","phd":"","research":"","journals":"","edits":"","url":""}]}`;
 const FACULTY_RULE = `Count only research-and-teaching faculty, broadly defined: professors, associate professors, assistant professors, readers, senior lecturers and lecturers on research and teaching contracts. Leave out teaching-only and practice roles (teaching fellows, teaching and scholarship or teaching-focused posts, professors of practice, clinical, adjunct, visiting and emeritus staff) and research-only posts (research fellows, postdocs).`;
 const SENIOR_GUIDE = `Start from the department's staff list on the school's own website. Find the senior staff in this department (professors, and associate professors or readers who have been there more than six years) whose research is closest to the candidate's topics: at least five if the department has them, at most eight. ${FACULTY_RULE}`;
-const JUNIOR_GUIDE = `Start from the department's staff list on the school's own website. Find the research-and-teaching faculty appointed in this department in the last six years: at least five if the department has them, at most eight. ${FACULTY_RULE} Say the year of appointment when a page shows it.`;
+const JUNIOR_GUIDE = `Start from the department's staff list on the school's own website. Find the research-and-teaching faculty most likely to have been appointed in the last six years: at least five if the department has them, at most eight. Where a page shows the year of appointment, use it and give it. Where it does not, take the junior ranks as the sign of a recent appointment: assistant professors and lecturers, and associate professors or senior lecturers whose PhD or first post is recent; put "year not shown" as the year appointed. ${FACULTY_RULE}`;
 const CONTACT_GUIDE = `The candidate knows the person named below in this department. Find them on the school's own website and report their job title and the department they belong to (put both in the title), roles (such as head of department or group, programme director), research, the journals they publish in and any journals they edit. Report only this person.`;
 const SUP_GUIDE = `The candidate has named their PhD supervisors and committee members below, and their CV may name the supervisors too. Find each person's own university page and report them. Report only the people named.`;
 async function runAgent(guide, about, limits){
@@ -821,7 +841,7 @@ async function runAgent(guide, about, limits){
 function peopleText(list, heading){
   if (!list || !list.length) return "";
   const v = x => x && !/^not shown/i.test(String(x).trim()) ? String(x).trim() : "";
-  return heading + "\n" + list.map(x => [x.name + (v(x.title) ? ", " + x.title : ""), v(x.appointed) && "Appointed " + x.appointed, v(x.phd) && (/^phd/i.test(v(x.phd)) ? v(x.phd) : "PhD " + v(x.phd)),
+  return heading + "\n" + list.map(x => [x.name + (v(x.title) ? ", " + x.title : ""), v(x.appointed) && (/not shown/i.test(x.appointed) ? "Year appointed not shown" : "Appointed " + x.appointed), v(x.phd) && (/^phd/i.test(v(x.phd)) ? v(x.phd) : "PhD " + v(x.phd)),
     v(x.research) && "Research: " + x.research, !x.oa && v(x.journals) && "Publishes in (from the staff page): " + x.journals, v(x.edits) && "Edits: " + x.edits, x.oa && "Papers in the last ten years (OpenAlex): " + x.oa, "Page: " + x.url].filter(Boolean).join(". ")).join("\n");
 }
 /* Publications from OpenAlex (his ruling, 28 Oct 2026). Free, no key; any failure leaves the person as the agents found them. */
@@ -886,7 +906,9 @@ async function findAll(status){
   const cv = $("cv-text").value.trim(), research = `=== THE CANDIDATE'S RESEARCH ===\n${clip($("jmp-text").value, 1500)}\n${clip(cv, 2500)}`;
   /* Supervisors and committee members: names only, or nothing, in the box. */
   const supNames = $("f-sup").value.trim();
-  if (supNames.length < 300 && !/Found by Claude/.test(supNames) && (supNames || cv)){
+  /* Searched once per visit for the same names (his run, 29 Oct 2026: none found, then searched again and paid twice). */
+  if (supNames.length < 300 && !/Found by Claude/.test(supNames) && (supNames || cv) && findAll.supDone !== supNames + "|" + cv.length){
+    findAll.supDone = supNames + "|" + cv.length;
     status("Searching for your supervisors and committee members…");
     const sup = await runAgent(SUP_GUIDE, "=== NAMED BY THE CANDIDATE ===\n" + (supNames || "none") + "\n\n=== THE CANDIDATE'S CV ===\n" + clip(cv, 8000), {search: 4, fetch: 3});
     await supPubs(sup);
@@ -907,18 +929,21 @@ async function findAll(status){
     if (/Found by Claude on the school's website/.test(people.value)) continue;
     status(`Searching ${name}'s website for senior staff and recent hires…`);
     const about = `=== THE DEPARTMENT ===\n${name}\n\n${research}`;
-    const [sen0, jun0] = await Promise.all([runAgent(SENIOR_GUIDE, about, {search: 5, fetch: 6}), runAgent(JUNIOR_GUIDE, about, {search: 5, fetch: 6})]);
+    const [sen0, jun0] = await Promise.all([runAgent(SENIOR_GUIDE, about, {search: 5, fetch: 4}), runAgent(JUNIOR_GUIDE, about, {search: 5, fetch: 4})]);
     status(`Looking up their publications in OpenAlex…`);
     const sen = await addPubs(sen0, name), jun = await addPubs(jun0, name);
-    const t = [peopleText(sen, "Senior staff closest to your research"), peopleText(jun, "Staff appointed in the last six years")].filter(Boolean).join("\n\n");
-    if (t) people.value = (people.value.trim() ? people.value.trim() + "\n\n" : "") + `Found by Claude on the school's website, ${today()}. Check it and correct anything wrong.\n\n` + t;
+    const t = [peopleText(sen, "Senior staff closest to your research"), peopleText(jun, "Recent hires and junior staff (appointed in the last six years, or junior where the year is not shown)")].filter(Boolean).join("\n\n");
+    /* Say when a search did not work or found no one (his run, 29 Oct 2026: no recent hires and no word why). */
+    const miss = [sen0 === null && "The search for senior staff did not work this time.", jun0 === null ? "The search for recent hires did not work this time." : (!jun0.length && "No recent hires were found on the school's website.")].filter(Boolean);
+    const tip = miss.length ? miss.join(" ") + " Add their pages yourself, or clear this box and press Find it for me again." : "";
+    if (t || tip) people.value = (people.value.trim() ? people.value.trim() + "\n\n" : "") + `Found by Claude on the school's website, ${today()}. Check it and correct anything wrong.\n\n` + [t, tip].filter(Boolean).join("\n\n");
   }
 }
 async function findPlaces(facts, sg){
   if (!sg || !sg.pool || !sg.pool.length) return null;
   const f = facts || {}, jmp = f.jmp || {};
   const txt = `${FIND_GUIDE}\n\n=== THE CANDIDATE ===\nTopics: ${(f.topics || []).join("; ") || "not given"}\nMethods: ${f.methods || "not given"}\nDiscipline: ${f.phd_discipline || "not given"}\nJob market paper: ${[jmp.question, jmp.lens, jmp.method].filter(Boolean).join("; ") || "not given"}\n\n=== THE SCHOOLS ===\n${sg.pool.map(x => x.school + " (" + x.country + ")").join("\n")}`;
-  try { const r = await sample.json(txt, {search: 14, model: SEARCH_MODEL}); const ok = new Set(sg.pool.map(x => x.school));
+  try { const r = await sample.json(txt, {search: 8, model: SEARCH_MODEL}); const ok = new Set(sg.pool.map(x => x.school));
     /* Names matched as the page matches schools elsewhere, so close variants count (fault found 28 Oct 2026: only one place shown). */
     const poolIdx = sg.pool.map(y => { const f = findSchool(y.school); return f ? f.i : -1; });
     const seen = new Set();
@@ -942,7 +967,7 @@ async function findWild(facts, sg){
   const poolIdx = (sg.pool || []).map(y => { const g = findSchool(y.school); return g ? g.i : -1; });
   const wildIdx = (sg.wildPool || []).map(y => { const g = findSchool(y.school); return g ? g.i : -1; });
   let got = [];
-  try { const r = await sample.json(txt, {search: 6, model: SEARCH_MODEL});
+  try { const r = await sample.json(txt, {search: 4, model: SEARCH_MODEL});
     got = (r && Array.isArray(r.wildcards) ? r.wildcards : []).map(x => { if (!x || !x.school || !/^https?:\/\//.test(x.url || "")) return null;
         const g = findSchool(x.school);
         if (g && wildIdx.includes(g.i)) return Object.assign(x, {school: plainSchool(g.i), country: SCHOOLS[g.i][4] || x.country});
@@ -1021,7 +1046,7 @@ function renderWild(sg){
 }
 /* Status square from the composite. Levels set by Claude for him to change: a gap under 1.0 is the same level,
    1.0 to 2.0 one level, 2.0 or more two levels (Harvard to LBS 1.0 apart, Oxford to Bath 1.5, Harvard to Bath 3.5).
-   Same level or one down 4; two or more down 3 (his ruling, 18 Oct 2026: moving down no worse than Fair); one up 3; two or more up 1. */
+   Same level or one down 4; two or more down 2 (his ruling, 29 Oct 2026: such moves are rare and the department doubts the candidate would come; supersedes 18 Oct "no worse than Fair"); one up 3; two or more up 1. */
 const LEVEL_ONE = 1.0, LEVEL_TWO = 2.0;
 /* His point, 17 Oct 2026: in a competitive year, good candidates from higher-status schools compete further down, so fits at
    higher-status schools are harder to find. The candidate's own reading of the market, 4 or 5 of 5, counts as tight:
@@ -1037,7 +1062,7 @@ function statusFromGroups(phdName, schoolName, claudeCell){
   let label;
   if (diff === 0){ score = 4; label = "Similar ranking"; text = "Your PhD school and this school sit close together in the rankings. Moves like this are common."; }
   else if (diff === 1){ score = 4; label = "Similar ranking"; text = "People from your PhD school often move to schools like this one."; }
-  else if (diff >= 2){ score = 3; label = "Some way apart"; text = "This school sits some way from your PhD school in the rankings. The committee is likely to value your training, but some may ask whether you would stay. It helps to give them a clear reason for wanting to be there."; }
+  else if (diff >= 2){ score = 2; label = "Some way apart"; text = "This school sits some way from your PhD school in the rankings. Moves like this are rare, and the committee may doubt that you would come and stay. It helps to give them a clear reason for wanting to be there."; }
   else if (diff === -1){ score = TIGHT() ? 2 : 3; label = "Ranked higher"; text = "This school is ranked higher than your PhD school, so your record may need to do more of the work." + (TIGHT() ? " In a tight year, people from higher-ranked schools often apply for these posts too." : ""); }
   else { score = 1; label = "Rather higher"; text = "This school is ranked rather higher than your PhD school. The committee may look more closely at your record here." + (TIGHT() ? " In a tight year, perhaps more so." : ""); }
   if (score < 4) text += " You cannot change the rankings. What can help is a strong record, someone in the department who knows your work, and a clear reason for wanting to be there.";
@@ -1052,6 +1077,12 @@ function scoreDept(profile, rows){
   /* How far the track-record weights apply (his ruling, 28 Oct 2026: gradual, not a switch). */
   const pp = profile && profile.papers;
   const tr = !pp || pp.track == null ? 1 : pp.track === false ? 0 : (typeof pp.pct === "number" ? Math.min(1, pp.pct / TRACK_FULL) : 1);
+  /* Status factor (his ruling, 29 Oct 2026): elite candidates are read through status, the rest through papers. 1 at PhD training 100,
+     0 at 70 or below, 1 where the PhD school is unknown. The research record weighs 50 at the top rising to 70 without status; the other
+     areas shrink to fit; the no-track-record shift towards status applies only in proportion to status. */
+  const ph = profile && profile.phd && typeof profile.phd.pct === "number" ? profile.phd.pct : null;
+  const S = ph == null ? 1 : Math.max(0, Math.min(1, (ph - 70) / 30));
+  const RW = 50 + 20 * (1 - S), kOther = (100 - RW) / 50;
   const seen = new Set();
   AREAS.forEach(a => {
     let s=0, w=0;
@@ -1065,7 +1096,8 @@ function scoreDept(profile, rows){
     const tW = pl == null ? 12 : 12 + 8 * ramp(pl, 3, 150) + 15 * ramp(pl, 150, 400), tExtra = tW - 6;
     /* Elite schools weigh PhD school and supervisors more, papers in hand less (his point, 28 Oct 2026). */
     const eShift = pl == null ? 0 : ELITE_SHIFT * (1 - ramp(pl, 3, 50));
-    const aw = Math.max(0, (a.noTrack + tr * (a.weight - a.noTrack)) + (a.name === "Teaching" ? tExtra : a.name === "Research record" ? -tExtra - eShift : a.name === "Status and reputation" ? eShift : 0));
+    const wBase = a.name === "Research record" ? RW : a.weight * kOther;
+    const aw = Math.max(0, (wBase + (1 - tr) * S * (a.noTrack - a.weight)) + (a.name === "Teaching" ? tExtra : a.name === "Research record" ? -tExtra - eShift : a.name === "Status and reputation" ? eShift : 0));
     if (val!==null){ tot+=aw*val; wsum+=aw; }
   });
   return {overall: wsum ? Math.round(tot/wsum) : null, areas, known, count};
@@ -1094,7 +1126,7 @@ const LISTS = `Journal lists.
 UT Dallas 24: ${UTD24.join("; ")}.
 Financial Times 50 (April 2026): ${FT50.join("; ")}.
 Well Matched journal buckets, its own judgement informed by several lists. World leading: ${BUCKETS.W.join("; ")}. Leading: ${BUCKETS.L.join("; ")}. Excellent: ${BUCKETS.E.join("; ")}.
-How committees read these: World leading journals are the clear top of the field. Leading journals are very highly regarded. Excellent journals are viewed as reasonably high. The FT list is a further signal of quality.
+How committees read these: World leading journals are the clear top of the field. Leading journals are very highly regarded. Excellent journals are viewed as reasonably high. The FT list is a further signal of quality. Strong journals are respectable field journals that count at most schools; only journals on none of the lists carry little weight.
 Strong: ${BUCKETS.S.join("; ")}. A journal on none of these lists is reported as "not on the lists", not ranked. Journals outside business and management (PNAS, Nature Human Behaviour, PLOS ONE and similar) are hard for panels to judge, and committees often give them less weight than conventional management journals.`;
 
 const PROFILE_GUIDE = `Time and career breaks: committees judge a record against the years since a candidate started their PhD; the more years, the higher the expectations. Count from the PhD start date as stated or, if not stated, as shown on the CV. Judge the record against the "years to judge the record against" given below, which already takes off a year for each significant career break (six months or more, such as maternity or parental leave or a health issue). Never count a career break against the candidate, never mention its reason, and do not treat a gap in the CV that a stated break explains as a concern.
@@ -1122,7 +1154,7 @@ const PROFILE_FORMAT = `Reply with only one JSON object in exactly this shape:
 
 const DEPT_GUIDE = `Time and career breaks: committees judge a record against the years since a candidate started their PhD; the more years, the higher the expectations. Count from the PhD start date as stated or, if not stated, as shown on the CV. Judge the record against the "years to judge the record against" given below, which already takes off a year for each significant career break (six months or more, such as maternity or parental leave or a health issue). Never count a career break against the candidate, never mention its reason, and do not treat a gap in the CV that a stated break explains as a concern.
 
-Judge the fit between this candidate and one department, from the advert and the department information the candidate pasted. Recent hires (assistant and associate professors appointed in the last few years) tell you most about what the department wants: their topics, their journals and where they did their PhDs. Look at what recent hires had when they were hired, where the pages show it (published papers, R&Rs). How committees read a candidate whose papers are all in preparation depends on the kind of department; use the standing line given below. Elite schools give more weight to training at a top PhD programme and to a well-known supervisor, and less to papers already in hand, but they compare the candidate with recent hires who came with papers in top journals: usually "A stretch for now". Conservative departments want at least an R&R or a publication in a good journal before they hire: usually "A stretch for now". Departments whose school stands well below the candidate's PhD school value a strong candidate, but the committee might raise questions about the candidate's interest in coming and staying, and may be wary of a record with no papers yet; say so in those terms. A promising pipeline aimed at good journals helps everywhere. Give these reasons in the department's terms; topic overlap matters, but in such cases it is not the main reason. Senior staff (professors and senior associate professors) sit on hiring committees and read the candidate's work. They expect more of new staff than of themselves, they tend to favour people like themselves, and those with top publications give top publications more weight.
+Judge the fit between this candidate and one department, from the advert and the department information the candidate pasted. Recent hires (assistant and associate professors appointed in the last few years) tell you most about what the department wants: their topics, their journals and where they did their PhDs. Look at what recent hires had when they were hired, where the pages show it (published papers, R&Rs). How committees read a candidate whose papers are all in preparation depends on the kind of department; use the standing line given below. Elite schools give more weight to training at a top PhD programme and to a well-known supervisor, and less to papers already in hand, but they compare the candidate with recent hires who came with papers in top journals: usually "A stretch for now". Conservative departments want at least an R&R or a publication in a good journal before they hire: usually "A stretch for now". Departments whose school stands some way below the candidate's PhD school in the rankings (two or more levels, as the standing line says) value a strong candidate, and may be wary of a record with no papers yet; only there might the committee wonder about the candidate's interest in coming and staying. A school one step below the PhD school expects moves like this and does not worry about it; say nothing about coming or staying there. A promising pipeline aimed at good journals helps everywhere. Give these reasons in the department's terms; topic overlap matters, but in such cases it is not the main reason. Senior staff (professors and senior associate professors) sit on hiring committees and read the candidate's work. They expect more of new staff than of themselves, they tend to favour people like themselves, and those with top publications give top publications more weight.
 
 topics (Research topics): overlap between the candidate's topics and the department's, especially recent hires. Overlap is good, but a department that already has several people on exactly the candidate's topic may not want another; say so if it applies.
 journals (Journals): do the department's people publish in the journals the candidate publishes in or aims at? Senior staff are sympathetic to a newcomer with papers in journals they have published in themselves (two or more papers there) or edited, at every stage: published, R&R, submitted or in preparation. Count that sympathy here; it does not lower the bar.
@@ -1134,17 +1166,17 @@ timing (Timing): does the candidate's PhD completion fit the start date in the a
 reasons (Reasons to be there): English is the minimum. Knowledge of, or real interest in, the local language helps, as does a credible personal tie to the country or city. Nationality itself is not the point. The candidate named this department themselves, so treat them as willing to consider moving there, whatever countries they ticked: the countries ticked only choose the places suggested. Committees assume candidates who apply are willing to move, so relocation counts only somewhat; they do judge how realistic the candidate is about moving here, from what they say about how far they are willing to move. If no tie to the place or knowledge of the language is given, that is no information: do not mark it down.
 bar (Probation bar and your ambition): compare the probation or tenure requirements (from the advert, the department's pages and what the candidate knows) with what the candidate expects of themselves five years in, their planned papers, and the pressure they want to live with. This is a preference, not a measure of ability: a strong candidate who wants more balance is a weaker match for a department that expects top journals only. Elite schools can be assumed to expect elite publications. If the requirements are not given, estimate the bar from the publication records of assistant and associate professors hired or promoted there in recent years, from the staff pages and profiles pasted, and say in the note that it is an estimate. Only if there is nothing to go on, null.
 core_journals: list those of the candidate's journals (published, R&R or submitted) that are core to this department's field, judged from where the department's people publish and from the advert: for an entrepreneurship group, entrepreneurship journals; for an organisation theory group, organisation journals. Write each name exactly as the candidate's facts give it. List none if none are core.
-hire_level: from the publication records of the department's recent hires and recently promoted staff in the pages pasted, the level they publish at: "mostly 4*" (mostly World leading or Leading journals), "4* and 4" (Leading and Excellent), "4 and 3" (Excellent and Strong) or "mostly 3" (Strong and below). If the pages do not show enough, "unknown".
+hire_level: the level the department hires at, from the publication records of its recent hires and recently promoted staff in the pages pasted. Judge each person by the strongest journal in their record, not the most frequent: one Leading paper outweighs several Strong ones. Then: "mostly 4*" if most of them hold a World leading paper; "4* and 4" if most hold a Leading paper, or several hold World leading or Leading papers; "4 and 3" if their best papers are mostly Excellent; "mostly 3" only if their best papers are Strong or below. A Strong journal is a respectable field journal, not a weak one. If the pages do not show enough, "unknown".
 jmpfit (Potential sympathy of senior staff for your job market paper): from the description of the candidate's job market paper (facts.jmp) and the senior staff's own research, would the senior staff likely see the paper favourably? Judge from their interests, the disciplines and theories they work in, their methods and the journals they publish in; a hard-core economics paper will not go down well with organisation theorists. Name the senior people the judgement rests on. If the pages show nothing about senior staff, or there is no job market paper, null.
 alike (Potential sympathy of senior staff for your profile): senior staff who did their PhD at the candidate's PhD school, or who come from the same academic family (the candidate's supervisors, their own supervisors or students). Committees tend to favour people like themselves. Describe what is shared; do not tell the candidate they belong there. Personal ties and co-authors are judged under links, topics and methods in their own squares. If the pages show nothing about where senior staff trained, null.
 sympathy_journals: list those of the candidate's journals, at any stage (published, R&R, submitted or in preparation), in which a senior member of staff has two or more papers or which a senior member edits, judged from the pages pasted. Write each name exactly as the candidate's facts give it. List none if the pages do not show it.
 senior_level: from the publication records of the senior staff in the pages pasted, the level they publish at: "mostly 4*", "4* and 4", "4 and 3" or "mostly 3", as for hire_level. If the pages do not show enough, "unknown".
 values (What you want in a department): compare what the candidate says they want in a department, and the values they see as valuable, with what the department's own pages and advert show about how it works and what it values. If the candidate gave nothing, or the pages show nothing relevant, null.
 
-In everything you write for the candidate, say match rather than fit. A well-known supervisor lends the candidate standing with any committee. Then give an overall reading, weighing everything above; a deal-breaker, such as a start date the candidate cannot meet, outweighs strengths elsewhere: "Good match", "Possible match", "A stretch for now" or "Not a match for now". Weight research fit above teaching fit. Give four to six plain sentences saying why, in terms of what the committee would see. Describe recent hires tentatively, from what the pages show: "recent hires appear to have arrived with...", "from the pages shown, most recent hires seem to..."; never as a rule the department follows. Lead with what is particular to this department: a named person, a recent hire, a journal, the advert. Name at least one specific link between this candidate and this department (a person whose research meets the job market paper, a journal both publish in, a course in the advert they could teach) and one specific gap or question (no one on their topic, a teaching need they do not cover). Do not repeat what is the same for every department (the PhD school, the supervisor, the count of papers): the candidate's own squares already say it. Do not open with "A committee would see" or "A committee is likely to"; vary how sentences begin. In the squares, where there is nothing particular to this department to say, keep the note to a few words.`;
+In everything you write for the candidate, say match rather than fit. A well-known supervisor lends the candidate standing with any committee. Then give an overall reading, weighing everything above; a deal-breaker, such as a start date the candidate cannot meet, outweighs strengths elsewhere: "Good match", "Possible match", "A stretch for now" or "Not a match for now". Weight research fit above teaching fit. Give five to seven plain sentences. Open with the committee's view of this candidate's file, in one or two sentences: how this department would weigh the record against the level its own recent hires publish at, the fit of the research with its people, and where the candidate's PhD school stands for it. Then give the evidence from the pages that supports that view: a named person whose research meets the job market paper, a journal both publish in, a course in the advert they could teach, and one specific gap or question (no one on their topic, a teaching need they do not cover). Name at least one recent hire and what the pages show they arrived with, set beside the candidate's record, as part of that evidence; if the pages show no recent hires, say so in one sentence. Describe recent hires tentatively, from what the pages show: "recent hires appear to have arrived with...", "from the pages shown, most recent hires seem to..."; never as a rule the department follows. The candidate's own squares say what is the same everywhere (the PhD school, the supervisor, the count of papers); here, say what it means for this department. Do not open with "A committee would see" or "A committee is likely to"; vary how sentences begin. In the squares, where there is nothing particular to this department to say, keep the note to a few words.`;
 
 const DEPT_FORMAT = `Reply with only one JSON object in exactly this shape:
-{"name":"short name of the department and school","school":"the university or business school's official name","core_journals":["the candidate's journals that are core to this department's field"],"hire_level":"mostly 4* | 4* and 4 | 4 and 3 | mostly 3 | unknown","senior_level":"mostly 4* | 4* and 4 | 4 and 3 | mostly 3 | unknown","sympathy_journals":["the candidate's journals where senior staff publish or edit"],"verdict":"Good match | Possible match | A stretch for now | Not a match for now","reading":"four to six sentences","make_case":["two or three short points"],"questions":["two or three questions this committee may ask"],"strengthen":"one or two sentences","rows":{"topics":{"score":3,"note":"","evidence":""},"journals":{...},"teachfit":{...},"discipline":{...},"status":{...},"links":{...},"timing":{...},"reasons":{...},"bar":{...},"jmpfit":{...},"alike":{...},"values":{...}}}`;
+{"name":"short name of the department and school","school":"the university or business school's official name","core_journals":["the candidate's journals that are core to this department's field"],"hire_level":"mostly 4* | 4* and 4 | 4 and 3 | mostly 3 | unknown","senior_level":"mostly 4* | 4* and 4 | 4 and 3 | mostly 3 | unknown","sympathy_journals":["the candidate's journals where senior staff publish or edit"],"verdict":"Good match | Possible match | A stretch for now | Not a match for now","reading":"five to seven sentences, one naming a recent hire","make_case":["two or three short points"],"questions":["two or three questions this committee may ask"],"strengthen":"one or two sentences","rows":{"topics":{"score":3,"note":"","evidence":""},"journals":{...},"teachfit":{...},"discipline":{...},"status":{...},"links":{...},"timing":{...},"reasons":{...},"bar":{...},"jmpfit":{...},"alike":{...},"values":{...}}}`;
 
 
 /* The new parts kept inside the guardrails (his words, 28 Oct 2026: "try to make sure the model sticks in our guardrails"). */
@@ -1329,15 +1361,16 @@ function standingText(phdName, name){
   const a = findSchool(phdName), b = a && findSchool(name);
   if (!a) return "the PhD school is not on the page's ranking lists"; if (!b) return "this school is not on the page's ranking lists";
   const g = b.score - a.score, m = Math.abs(g);
-  return m < 0.3 ? "its school has a similar standing to the PhD school" : g < 0 ? (m < 1 ? "its school has a somewhat stronger standing than the PhD school" : "its school has a much stronger standing than the PhD school") : (m < 1 ? "its school has a somewhat weaker standing than the PhD school" : "its school stands well below the PhD school");
+  if (m < 0.3) return "its school has a similar standing to the PhD school";
+  if (g < 0) return m < LEVEL_ONE ? "its school has a somewhat stronger standing than the PhD school" : m < LEVEL_TWO ? "its school stands a step above the PhD school; moves like this are common" : "its school stands some way above the PhD school in the rankings";
+  return m < LEVEL_ONE ? "its school has a somewhat weaker standing than the PhD school" : m < LEVEL_TWO ? "its school stands a step below the PhD school; moves like this are common" : "its school stands some way below the PhD school in the rankings";
 }
 function targetComparisons(phdName){
   const a = findSchool(phdName);
   return targetList().map(([label, name]) => {
     const b = a && findSchool(name);
     let d = "its school is not on the page's ranking lists";
-    if (b){ const g = b.score - a.score, m = Math.abs(g);
-      d = m < 0.3 ? "its school has a similar standing to the PhD school" : (g < 0 ? (m < 1 ? "its school has a somewhat stronger standing than the PhD school" : "its school has a much stronger standing than the PhD school") : (m < 1 ? "its school has a somewhat weaker standing than the PhD school" : "its school has a much weaker standing than the PhD school")); }
+    if (b) d = standingText(phdName, name);   // the same levels and words as the department readings (29 Oct 2026)
     if (!a) d = "the PhD school is not on the page's ranking lists, so standing cannot be compared";
     return `${label}: ${name}: ${d}`;
   });
@@ -1380,7 +1413,7 @@ function countryLine(dp){ const f = findSchool(dp.school || dp.name), c = f && S
   return c && cs && !cs.has(c) ? ` This is lower partly because ${c} is not among the countries you chose. That is your choice, not how the committee would see you.` : ""; }
 /* His point, 28 Oct 2026: matching is also about whether the committee expects the candidate to come. */
 function comingLine(dp, phdName){ const a = findSchool(phdName), b = findSchool(dp.school || dp.name);
-  return a && b && b.score - a.score >= 1 ? ` The committee might raise questions about your interest in coming.` : ""; }
+  return a && b && b.score - a.score >= LEVEL_TWO ? ` The committee might raise questions about your interest in coming.` : ""; }
 function placeLine(pp){ if (!pp) return ""; return (pp.coreFour ? " Here, Leading and Excellent journals may be assessed a little lower, even in the department's core field." : "") + (pp.halfFour ? " Here, Leading and Excellent journals outside the department's core field are likely to be assessed lower." : "") + (pp.lowNone ? " Here, papers in Strong and other journals are likely to be assessed as carrying little weight." : pp.lowLess ? " Here, papers in Strong and other journals are likely to be assessed less highly." : "") + (pp.lowCounts ? " Many papers in Strong or other journals may be seen as a concern." : ""); }
 
 /* ---------- Heat map ---------- */
@@ -1594,13 +1627,14 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
 const PRICE = {"claude-opus-5-5": [4, 20], "claude-sonnet-5-5": [2, 10]}, SEARCH_PRICE = 0.01, SEARCH_MODEL = "claude-sonnet-5-5";
 let spent = 0;
 function addCost(model, u){ if (!u) return; const pr = PRICE[model] || PRICE["claude-opus-5-5"];
-  const tin = (u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) + (u.cache_read_input_tokens || 0);
+  const tin = (u.input_tokens || 0) + 1.25 * (u.cache_creation_input_tokens || 0) + 0.1 * (u.cache_read_input_tokens || 0);   // cache writes 1.25x, reads a tenth
   spent += tin / 1e6 * pr[0] + (u.output_tokens || 0) / 1e6 * pr[1] + ((u.server_tool_use || {}).web_search_requests || 0) * SEARCH_PRICE; }
 const costText = () => ` This came to about $${spent < 0.995 ? spent.toFixed(2) : spent.toFixed(1)} on your key (an estimate from Anthropic's prices).`;
 async function askClaude(prompt, opts){
   const key = keyBox.value.trim(); opts = opts || {};
   const tools = opts.search ? [{type: "web_search_20260209", name: "web_search", max_uses: opts.search}].concat(opts.fetch ? [{type: "web_fetch_20260209", name: "web_fetch", max_uses: opts.fetch}] : []) : undefined;
-  let messages = [{role: "user", content: prompt}], texts = [], resumes = 0;
+  /* Prompt caching (cost, 29 Oct 2026): the search rounds re-read the prompt and the pages fetched so far; cached, they cost a tenth. */
+  let messages = [{role: "user", content: tools ? [{type: "text", text: prompt, cache_control: {type: "ephemeral"}}] : prompt}], texts = [], resumes = 0;
   for (let attempt = 0; ; attempt++){
     let res;
     try {
@@ -1614,7 +1648,7 @@ async function askClaude(prompt, opts){
       if (m.stop_reason === "refusal") throw {code: "refusal"};
       texts.push((m.content || []).filter(b => b.type === "text").map(b => b.text).join(""));
       /* A long web search pauses; send the turn back and it carries on (at most four times). */
-      if (m.stop_reason === "pause_turn" && resumes < 4){ resumes++; messages = [{role: "user", content: prompt}, {role: "assistant", content: m.content}]; attempt = -1; continue; }
+      if (m.stop_reason === "pause_turn" && resumes < 4){ resumes++; messages = [messages[0], {role: "assistant", content: m.content}]; attempt = -1; continue; }
       if (m.stop_reason === "max_tokens") throw {code: "shape"};
       return texts.join("");
     }
@@ -1773,6 +1807,10 @@ Anything else about where they would or would not move: ${$("f-distance").value.
   }
   const results = new Array(depts.length); let next = 0;
   async function worker(){ while (next < depts.length){ const i = next++; results[i] = await readDept(depts[i]); } }
+  /* Places and wild cards need only the candidate's facts, so they run alongside the department readings (cost and time, 29 Oct 2026). */
+  const pcEarly = paperCount(prof.facts && prof.facts.papers, {years: judgedYears(prof.facts && prof.facts.phd_start)});
+  const sg = suggestPlaces(prof.facts && prof.facts.phd_institution, depts.map(d => d.name), pcEarly && pcEarly.pct);
+  const sgWork = sg ? Promise.all([findPlaces(prof.facts, sg), findWild(prof.facts, sg)]) : null;
   await Promise.all([worker(), worker()]);
   /* The checker (his ruling, 28 Oct 2026). */
   msg.textContent = "Checking the readings…";
@@ -1807,7 +1845,12 @@ Anything else about where they would or would not move: ${$("f-distance").value.
     const own = r.rows && r.rows.status && r.rows.status.score != null;
     if (st && !own){ r.rows = r.rows || {}; r.rows.status = st; }
     else if (st && own){ r.rows.status = Object.assign({}, r.rows.status, {label: st.label, note: (r.rows.status.note || "") + " From the rankings alone: " + st.note.split(" Matched as")[0]}); }
-    r.place = LEVEL_PLACE[String(r.hire_level || "").trim()] || placeOf(r.school || depts[i].name);
+    { const hl = levelFromPeople(depts[i].people, "Recent hires and junior staff") || levelFromPeople(depts[i].people, "Staff appointed in the last six years");
+      const sl = levelFromPeople(depts[i].people, "Senior staff closest to your research");
+      const schoolPlace = placeOf(r.school || depts[i].name);
+      if (hl){ r.hire_level_claude = r.hire_level; r.hire_level = hl.level; r.hire_n = hl.n; r.hire_place = levelPlace(hl, schoolPlace); }
+      if (sl){ r.senior_level_claude = r.senior_level; r.senior_level = sl.level; r.senior_n = sl.n; r.senior_place = levelPlace(sl, schoolPlace); } }
+    r.place = r.hire_place || LEVEL_PLACE[String(r.hire_level || "").trim()] || placeOf(r.school || depts[i].name);
     r.reach = reachFactor(prof.facts && prof.facts.phd_institution, r.school || depts[i].name, r.place);
     { const ps = findSchool(prof.facts && prof.facts.phd_institution), hs = findSchool(r.school || depts[i].name);
       if (ps && hs && ps.i === hs.i){ r.own = ownPull(r.place); const pct = Math.round(67 * ramp(r.place, 3, 150));
@@ -1816,7 +1859,7 @@ Anything else about where they would or would not move: ${$("f-distance").value.
        paper count halfway towards it. */
     /* Halfway (his ruling, 28 Oct 2026: "Halfway is fine"; the full step was too much): when the senior staff publish at a more demanding
        level than the recent hires, the paper count moves halfway between the two on the same scale. */
-    { const sp = LEVEL_PLACE[String(r.senior_level || "").trim()], hp = LEVEL_PLACE[String(r.hire_level || "").trim()] ?? r.place;
+    { const sp = r.senior_place ?? LEVEL_PLACE[String(r.senior_level || "").trim()], hp = r.hire_place ?? LEVEL_PLACE[String(r.hire_level || "").trim()] ?? r.place;
       r.paperPlace = (sp != null && hp != null && sp < hp) ? Math.sqrt(sp * hp) : (hp ?? r.place);
       /* Senior staff who publish at 4 respect 4s: a small uplift for Leading and Excellent papers only, a quarter of the way to their level. */
       r.fourPlace = (sp != null && hp != null && sp > hp) ? Math.pow(hp, 0.75) * Math.pow(sp, 0.25) : null; }
@@ -1832,10 +1875,8 @@ Anything else about where they would or would not move: ${$("f-distance").value.
     try { tnote = await sample.json(`${TARGET_GUIDE}\n\n${RULES}\n\n=== CANDIDATE (extracted from their materials) ===\n${facts}\n${statedLater}\n\n=== THE TARGETS ===\n${targetComparisons(prof.facts && prof.facts.phd_institution).join("\n")}\n\n=== WHAT WAS READ ===\n${readLines.join("\n")}`); }
     catch(e){ tnote = null; }
   }
-  const sg = suggestPlaces(prof.facts && prof.facts.phd_institution, results.map((r, i) => r.school || depts[i].name), pc && pc.pct);
   if (sg) sg.entered = results.flatMap((r, i) => [r.school, r.name, depts[i].name]).concat(targetList().map(x => x[1]));
-  if (sg){ msg.textContent = "Searching school websites for places that suit your interests…"; sg.found = await findPlaces(prof.facts, sg);
-    msg.textContent = "Looking for wild cards…"; sg.wild = await findWild(prof.facts, sg); }
+  if (sgWork){ msg.textContent = "Finishing the search for places and wild cards…"; const [found, wild] = await sgWork; sg.found = found; sg.wild = wild; }
   renderSuggestions(sg);
   renderWhatIf(prof.facts && prof.facts.papers);
   render({profile: data0.profile, depts: results, tnote}, false);

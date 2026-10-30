@@ -4,7 +4,7 @@
 
 **See your record through a hiring committee's eyes.** Well Matched is for PhD students and postdocs looking for their first teaching and research post at a business school in Europe. It reads your CV, letter and job market paper the way a shortlisting committee might, searches the schools' own websites, and shows how well you match each department you are considering, and why.
 
-**Free, open source and private.** The developer sees nothing you enter, and nothing it tells you. There is no server and nothing is kept: the page runs in your own browser, and your materials go only to Anthropic, using your own API key, to be read.
+**Free, open source and private.** Everything runs in your browser. Your materials go only to Anthropic, with your own API key, under your own account's settings. The tool itself keeps nothing.
 
 [Open Well Matched](https://[GITHUB PAGES ADDRESS TO BE ADDED]/)
 
@@ -15,11 +15,11 @@
 - other schools worth a look, including wild cards you may not have considered;
 - a report to keep, with every piece of material used.
 
-It reflects experience, not an ideal: it is designed to show how hiring committees tend to behave, not how they ought to. AI can make mistakes, so check what it tells you.
+It is built on experience of how hiring committees assess candidates. AI can make mistakes, so check what it tells you.
 
 ## How to use it
 
-**With your own Anthropic API key.** Open the tool, paste a key from [console.anthropic.com](https://console.anthropic.com) (you will need to add credit there first), add your materials and up to three departments, and press Read my match. A run with three departments costs about $1.50 to $1.70, charged to your own Anthropic account, and takes about five minutes. It is safest to make a key just for this tool and set a monthly spending limit on it.
+**With your own Anthropic API key.** Open the tool, paste a key from [console.anthropic.com](https://console.anthropic.com) (you will need to add credit there first), add your materials and up to three departments, and press Read my match. A run on one department with Find it for me costs about $1.20 and takes about seven minutes; three departments come to about $2.50 and ten to twelve minutes, charged to your own Anthropic account (measured on 29 October 2026). It is safest to make a key just for this tool and set a monthly spending limit on it.
 
 **In your Claude.** You can also run Well Matched, with its web searches, through your own personal or professional Claude account: see [Well Matched in your Claude](in-your-claude/). Attach `in-your-claude/well-matched-chat.html` to a new Claude chat and follow `in-your-claude/How to run Well Matched in your Claude chat.txt`.
 
@@ -45,7 +45,7 @@ then open `http://localhost:8000/` in your browser. (Opening `index.html` straig
 
 ## How it was built and checked
 
-Well Matched began in October 2026 as a Claude artifact, drawing on experience of hiring committees, and was revised many times. Designed, developed and reviewed by Ammon Salter, Warwick Business School, using Claude Opus 5.5.
+Well Matched began in October 2026 as a Claude artifact, drawing on experience of hiring committees, and was revised many times. Designed, developed and reviewed by Ammon Salter, Warwick Business School, using Claude Opus 5.5 and Claude Fable 5.1.
 
 Beta-testers, named under Credits, used it and commented. Their comments shaped the questions it asks and led to the agents that find each department's information. It was then rebuilt as a website that runs on the candidate's own key. The scores come from fixed rules in the page, and Claude does the reading.
 
@@ -60,7 +60,7 @@ It has not yet been tested against real hiring outcomes.
 
 ## Your data
 
-Nothing you enter is captured or recorded, and there is no database behind the tool. There is no advertising, no fee and no paid version. What you put in goes only to Anthropic, with your own key, to be read, and what happens to it there is between you and the settings you choose in your Anthropic account. The names of departments' staff are sent to OpenAlex to count their publications.
+The tool itself captures and records nothing, and there is no database behind it. There is no advertising, no fee and no paid version. What you put in goes only to Anthropic, with your own key, to be read, and what happens to it there is between you and the settings you choose in your Anthropic account. The names of departments' staff are sent to OpenAlex to count their publications.
 
 ## Disclaimer
 
@@ -87,7 +87,7 @@ Salter, A. (2026). *Well Matched: matching first-post candidates with European b
 
 ## Credits
 
-Designed, developed and reviewed by Ammon Salter, Warwick Business School, using Claude Opus 5.5. Website: [ammonsalter.org](https://ammonsalter.org).
+Designed, developed and reviewed by Ammon Salter, Warwick Business School, using Claude Opus 5.5 and Claude Fable 5.1. Website: [ammonsalter.org](https://ammonsalter.org).
 
 If you teach entrepreneurship or innovation, you might like to use the games from [The I&E Playbook](https://ieplaybook.substack.com).
 

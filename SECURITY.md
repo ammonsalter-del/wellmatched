@@ -12,7 +12,7 @@ Well Matched is a single web page with no server, no database and no account. It
 
 ### Use an API (the website)
 
-- **Your API key** is typed into the page and sent only to Anthropic (`api.anthropic.com`), with each request to read your materials. It is never sent to the developer or anyone else. If you tick "Remember my key on this computer", it is kept in this browser's local storage on this computer; "Forget my key" removes it. On a shared computer, do not tick it.
+- **Your API key** is typed into the page and sent only to Anthropic (`api.anthropic.com`), with each request to read your materials. It is never sent anywhere else. If you tick "Remember my key on this computer", it is kept in this browser's local storage on this computer; "Forget my key" removes it. On a shared computer, do not tick it.
 - **Your materials** (CV, letter, paper and the departments' information) are read in your browser and sent only to Anthropic, under your own account's settings.
 - **Staff names** for each department are sent to OpenAlex (`api.openalex.org`) to count their publications.
 
@@ -31,7 +31,7 @@ Well Matched uses Google Analytics purely to track use by country and time. No o
 
 ## For university IT and data protection teams
 
-- **Nothing reaches the developer.** There is no server, database or account, so the developer never receives a candidate's materials, key or results.
+- **The tool itself keeps nothing.** There is no server, database or account, so a candidate's materials, key and results exist only in their own browser and, once sent, under their own Anthropic account's settings.
 - **Materials go to the candidate's own provider.** A candidate's materials are sent to Anthropic under their own API key or Claude account, and that account's terms and settings apply.
 - **Public staff information only.** When the website version looks up a department, it reads only the school's own public staff pages and notes professional facts: name, title, research, journals and the page's address.
 - **Analytics only with consent.** Google Analytics is loaded only after a visitor allows it, and counts visits by country and time.
