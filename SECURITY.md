@@ -48,7 +48,7 @@ The page tells a counter, GoatCounter, when it is opened, when a run finishes an
 
 ## Repository security
 
-The repository is the real security boundary: whoever can push to it changes what every future visitor loads. Current position: a single maintainer, with no write access granted to anyone else; two-factor authentication on the GitHub account [confirm]; branch protection on main [confirm in settings]; GitHub security features (Dependabot and code scanning) [confirm in settings]; and only the two libraries in `lib/` as dependencies.
+The repository is the real security boundary: whoever can push to it changes what every future visitor loads. Current position: a single maintainer, with no write access granted to anyone else; GitHub's secret scanning with push protection switched on, so a commit that contains a key or token is blocked; no branch protection on main at this stage, since one person pushes; and only the two libraries in `lib/` as dependencies.
 
 ## Keeping your key safe
 
