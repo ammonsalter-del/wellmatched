@@ -21,7 +21,7 @@ It is built on experience of how hiring committees assess candidates. AI can mak
 
 **With your own Anthropic API key.** Open the tool, paste a key from [console.anthropic.com](https://console.anthropic.com) (you will need to add credit there first), add your materials and up to three departments, and press Read my match. A run on one department with Find it for me costs about $1.20 and takes about seven minutes; three departments come to about $2.50 and ten to twelve minutes, charged to your own Anthropic account (measured on 29 October 2026). It is safest to make a key just for this tool and set a monthly spending limit on it.
 
-**In your Claude.** You can also run Well Matched, with its web searches, through your own personal or professional Claude account: see [Well Matched in your Claude](in-your-claude/). Attach `in-your-claude/well-matched-chat.html` to a new Claude chat and follow `in-your-claude/How to run Well Matched in your Claude chat.txt`.
+**With your Claude.** You can also run Well Matched, with its web searches, through your own personal or professional Claude account: see [Well Matched with your Claude](in-your-claude/). Attach `in-your-claude/well-matched-chat.html` to a new Claude chat and follow `in-your-claude/How to run Well Matched in your Claude chat.txt`.
 
 **Do it yourself.** A shorter version runs as a Claude artifact on your own Claude account, with no key. You paste what you know about each department, and it does not search the web. It is likely to be less reliable than the other versions, as it has less information to work with: the logic is the same, but the readings may vary more. [link]
 
@@ -39,7 +39,7 @@ then open `http://localhost:8000/` in your browser. (Opening `index.html` straig
 - `lib/`: the PDF and Word readers it uses (pdf.js and mammoth.js), kept here so nothing is loaded from elsewhere.
 - `images/`: the logo, the picture of how it works, and the detailed map.
 - `manual.md`: the development manual, which explains how the tool works, how it scores and the rules it follows.
-- `in-your-claude/`: Well Matched in your Claude, the version for your own Claude chat, with its instructions.
+- `in-your-claude/`: Well Matched with your Claude, the version for your own Claude chat, with its instructions.
 - `SECURITY.md`: how your key and materials are handled, and how to report a problem.
 - `CONTRIBUTING.md` and `CHANGELOG.md`: how to send suggestions or changes, and what has changed.
 
@@ -91,6 +91,6 @@ Designed, developed and reviewed by Ammon Salter, Warwick Business School, using
 
 If you teach entrepreneurship or innovation, you might like to use the games from [The I&E Playbook](https://ieplaybook.substack.com).
 
-Contributors and beta-testers: Federico Bignone (Warwick Business School), Christos Kolympiris (Warwick Business School), Rossella Salandra (University of Bath), Philipp Wähler (CUNEF) and Zou Na (University of Bath). They tried the tool and gave feedback. Any errors are the developer's own.
+Contributors and beta-testers: Federico Bignone, Christos Kolympiris, Rossella Salandra, Philipp Wähler and Zou Na. They tried the tool and gave feedback. Any errors are the developer's own.
 
 Suggestions, experiments and experiences, positive or negative, are welcome: [ammon.salter@wbs.ac.uk](mailto:ammon.salter@wbs.ac.uk).

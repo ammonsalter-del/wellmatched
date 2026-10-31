@@ -16,25 +16,25 @@ Well Matched is a single web page with no server, no database and no account. It
 - **Your materials** (CV, letter, paper and the departments' information) are read in your browser and sent only to Anthropic, under your own account's settings.
 - **Staff names** for each department are sent to OpenAlex (`api.openalex.org`) to count their publications.
 
-### In your Claude and Do it yourself
+### With your Claude and Do it yourself
 
 - Your materials go only to Claude, through your own Claude account and under that account's settings. There is no API key.
 - Neither version sends anything to OpenAlex, and Do it yourself looks nothing up on the web.
 
 ### Analytics
 
-Well Matched uses Google Analytics purely to track use by country and time. No other information is collected. Counting use shows that this free educational tool is being used, and earns credit for the work that goes into it.
+The page tells a counter, GoatCounter, when it is opened, when a run finishes and when a file is downloaded, with the country and the time, and nothing else. It sets no cookie and keeps no address. Counting use shows that this free educational tool is being used.
 
-- It runs on the website only, and only after you press Allow on the notice at the foot of the page. If you press No thanks, nothing is loaded from Google Analytics. You can change your choice at any time from the link under Your data at the foot of the page.
-- Nothing you type or upload is sent to Google. Google signals and advertising features are switched off.
-- Your choice is kept in this browser's local storage.
+- It runs on the website only. The chat version and the artifact carry no counter and report nothing.
+- GoatCounter is open-source, privacy-first analytics: it sets no cookie, stores no address and needs no consent notice, so there is none. Its script loads from gc.zgo.at and the counts go to wellmatched.goatcounter.com.
+- The three events it records are a run finishing, a download of the chat version from the With your Claude card, and the artifact being opened from the Do it yourself card. Nothing you type or upload is ever sent to it.
 
 ## For university IT and data protection teams
 
 - **The tool itself keeps nothing.** There is no server, database or account, so a candidate's materials, key and results exist only in their own browser and, once sent, under their own Anthropic account's settings.
 - **Materials go to the candidate's own provider.** A candidate's materials are sent to Anthropic under their own API key or Claude account, and that account's terms and settings apply.
 - **Public staff information only.** When the website version looks up a department, it reads only the school's own public staff pages and notes professional facts: name, title, research, journals and the page's address.
-- **Analytics only with consent.** Google Analytics is loaded only after a visitor allows it, and counts visits by country and time.
+- **Counting without cookies.** GoatCounter counts visits, runs and downloads by country and time, sets no cookie and keeps no address.
 - **Fully auditable.** The complete source code, including every network call, is public in this repository.
 - **Run it yourself.** Institutions can download the repository and serve it from their own servers.
 
@@ -43,7 +43,7 @@ Well Matched uses Google Analytics purely to track use by country and time. No o
 - Anthropic's API (`api.anthropic.com`), for the reading, in the website version
 - OpenAlex (`api.openalex.org`), for publication counts, in the website version
 - Google Fonts (`fonts.googleapis.com`), for the typeface
-- Google Analytics (`googletagmanager.com`), on the website only and only with consent
+- GoatCounter (`gc.zgo.at` and `wellmatched.goatcounter.com`), on the website only
 - pdf.js 3.11.174 and mammoth.js 1.6.0, the PDF and Word readers, kept in `lib/` and loaded from this repository
 
 ## Repository security
