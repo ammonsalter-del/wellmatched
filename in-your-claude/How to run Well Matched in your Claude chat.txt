@@ -3,7 +3,7 @@ HOW TO RUN WELL MATCHED IN YOUR OWN CLAUDE CHAT
 Well Matched, developed by Ammon Salter, Warwick Business School.
 Free and open source under the Creative Commons Attribution-NonCommercial 4.0 licence (CC BY-NC 4.0).
 
-This version needs no API key. It runs in your own Claude chat, on your own Claude account, and uses your plan's allowance. Nothing goes to the developer.
+This version needs no API key. It runs in your own Claude chat, on your own Claude account, and uses your plan's allowance. The tool itself keeps nothing.
 
 If you have an Anthropic API key, use the website version instead. It finds each department's staff for you, which this version cannot.
 
