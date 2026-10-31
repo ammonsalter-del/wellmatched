@@ -6,7 +6,7 @@
 
 **Free, open source and private.** Everything runs in your browser. Your materials go only to Anthropic, with your own API key, under your own account's settings. The tool itself keeps nothing.
 
-[Open Well Matched](https://[GITHUB PAGES ADDRESS TO BE ADDED]/)
+[Open Well Matched](https://ammonsalter-del.github.io/wellmatched/)
 
 ## What you get
 
@@ -23,7 +23,7 @@ It is built on experience of how hiring committees assess candidates. AI can mak
 
 **With your Claude.** You can also run Well Matched, with its web searches, through your own personal or professional Claude account: see [Well Matched with your Claude](in-your-claude/). Attach `in-your-claude/well-matched-chat.html` to a new Claude chat and follow `in-your-claude/How to run Well Matched in your Claude chat.txt`.
 
-**Do it yourself.** A shorter version runs as a Claude artifact on your own Claude account, with no key. You paste what you know about each department, and it does not search the web. It is likely to be less reliable than the other versions, as it has less information to work with: the logic is the same, but the readings may vary more. [link]
+**Do it yourself.** A shorter version runs as a Claude artifact on your own Claude account, with no key. You paste what you know about each department, and it does not search the web, so it has less to work with than the other versions: the logic is the same. [Open the artifact](https://claude.ai/artifact/J8AQ5XHqGiMXQLfXtuEcnf).
 
 **On your own computer.** Download this repository and serve the folder with any small web server, for example:
 
