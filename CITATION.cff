@@ -7,7 +7,7 @@ authors:
     given-names: Ammon
     affiliation: "Warwick Business School, University of Warwick"
     email: ammon.salter@wbs.ac.uk
-license: CC-BY-NC-4.0
-date-released: 2026-10-28
-version: "1.0"
-doi: "[DOI to be added]"
+license: CC-BY-NC-SA-4.0
+date-released: 2026-10-31
+version: "1.1"
+doi: "10.5281/zenodo.23835317"

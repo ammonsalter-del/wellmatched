@@ -591,7 +591,7 @@ These were open when this version of the manual was written.
 - Some school names may still be merged wrongly in the school data; two were found and fixed (Luiss listed twice, and Eindhoven shown under the name of TIAS), and two research institutes that do not hire business faculty (the Tinbergen Institute and the European University Institute) were taken out of places and wild cards.
 - The report's "Print or save as PDF" button has not been tested in a person's own browser.
 - The footer still calls the tool a prototype.
-- Before it goes online: the GitHub repository link for "No API key? No problem"; the Zenodo DOI for "How to cite".
+- The GitHub repository link for "No API key? No problem" and the Zenodo DOI are in.
 - OpenAlex can refuse a connection's requests after many runs in one day; the page then grades from the staff-page journals and, failing those, from Claude's word, and says so. Some of the real runs ran that way.
 - The department's level rests on however many people the agents found with records; where that is one or two, the page blends in the school's place, but a thin sample is still a thin sample.
 - The score varies from run to run mainly through Find it for me (different staff found each time); the reading on a fixed staff list is stable to within a point or two.
@@ -606,13 +606,13 @@ These were open when this version of the manual was written.
 
 Please cite Well Matched as:
 
-> Salter, A. (2026). Well Matched: matching first-post candidates with European business school departments [Software]. Zenodo. https://doi.org/[DOI to be added]
+> Salter, A. (2026). Well Matched: matching first-post candidates with European business school departments (Version 1.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23835317
 
-The tool is to be deposited on Zenodo from its GitHub repository, which gives it a DOI and a citation for each version. Until then the DOI above is a placeholder. If you develop your own version, please credit Well Matched and its contributors, as the CC BY-NC 4.0 licence asks.
+The tool is deposited on Zenodo, which gives it a DOI and a citation for each version. If you develop your own version, please credit Well Matched and its contributors, as the CC BY-NC-SA 4.0 licence asks.
 
 ## Sources and credits
 
-Well Matched is open source. It is shared under the Creative Commons Attribution-NonCommercial 4.0 licence (CC BY-NC 4.0): free to use, adapt and share for non-commercial purposes, with credit to Well Matched and its contributors. It is developed by Ammon Salter, Warwick Business School. Contributors and beta-testers: Federico Bignone, Christos Kolympiris, Rossella Salandra, Philipp Wähler and Zou Na. They tried the tool and gave feedback. Any errors are the developer's own. The page invites people to read this manual, develop their own version with credit, offer suggestions, experiment with it and share their experience.
+Well Matched is open source. It is shared under the Creative Commons Attribution-NonCommercial 4.0 licence (CC BY-NC-SA 4.0): free to use, adapt and share for non-commercial purposes, with credit to Well Matched and its contributors. It is developed by Ammon Salter, Warwick Business School. Contributors and beta-testers: Federico Bignone, Christos Kolympiris, Rossella Salandra, Philipp Wähler and Zou Na. They tried the tool and gave feedback. Any errors are the developer's own. The page invites people to read this manual, develop their own version with credit, offer suggestions, experiment with it and share their experience.
 
 **A note on status hierarchies.** Journal lists and school ranking tables are status hierarchies built on reputation: what people in the field believe, not what is true of any journal, paper, person, department or university. Well Matched does not endorse them. They have many limitations, and they are unreliable for judging individual people, departments or even universities: achieving a high ranking relies on many things. Committees are made up of people, just like you. They rely on heuristics and biases in decision-making to help make their choices easier. Hiring early-career academics is hard: there is a lot of uncertainty about fit, quality and future performance. In the face of these pressures, committees often fall back on weak signals of status: hierarchies based on complex social processes, and public rankings that reflect these views. Committees may also be shaped by their members' personal preferences, knowledge and networks. They may not consult the lists or ranking tables directly, but they are highly likely to be aware of them. Well Matched draws on these hierarchies for that reason: to show how a committee is likely to read a record, not how it should be read.
 

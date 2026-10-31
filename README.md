@@ -104,7 +104,7 @@ This tool is a prototype. It is designed to help, but it is AI based and therefo
 
 ## Licence
 
-Well Matched is shared under the [Creative Commons Attribution-NonCommercial 4.0 International licence (CC BY-NC 4.0)](LICENSE.md): you are free to use, adapt and share it for non-commercial purposes, with credit to Well Matched and its contributors. The PDF and Word readers in `lib/` keep their own licences (Apache 2.0 for pdf.js, BSD 2-Clause for mammoth.js). The licence covers Well Matched's own code, text and journal buckets; the lists and rankings named as sources belong to their publishers and keep their own terms. No grade from any of them is kept here.
+Well Matched is shared under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International licence (CC BY-NC-SA 4.0)](LICENSE.md): you are free to use, adapt and share it for non-commercial purposes, with credit to Well Matched and its contributors. The PDF and Word readers in `lib/` keep their own licences (Apache 2.0 for pdf.js, BSD 2-Clause for mammoth.js). The licence covers Well Matched's own code, text and journal buckets; the lists and rankings named as sources belong to their publishers and keep their own terms. No grade from any of them is kept here.
 
 ## Sources
 
@@ -119,7 +119,7 @@ If you think a journal or school is placed wrongly, please take it up with the l
 
 ## How to cite
 
-Salter, A. (2026). *Well Matched: matching first-post candidates with European business school departments* [Software]. Zenodo. https://doi.org/[DOI to be added]
+Salter, A. (2026). *Well Matched: matching first-post candidates with European business school departments* (Version 1.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23835317
 
 ## Credits
 
